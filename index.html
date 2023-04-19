@@ -29,10 +29,13 @@
   
   <section data-bs-version="5.1" class="menu menu3 cid-tBNsVASRrB" once="menu" id="menu3-12">
 
+    
 
     
-    
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        
+
+        
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo">
@@ -70,10 +73,16 @@
                 
             </div>
         </div>
+       
+
     </nav>
     
+    <div class="circle"></div>
+    
+     
+    
 
-<a class="circle"></a>
+
 
 <script>
 // Get the element with class name .circle"
@@ -124,6 +133,7 @@ document.addEventListener('mousemove', function(event) {
 
     // If the tracking should start and it's not already in progress, set the target position and start the tracking
     if (shouldStartTracking && !isTrackingInProgress) {
+        iconElement.style.display = 'block';
         targetX = event.clientX + scrollX;
         targetY = event.clientY + scrollY;
         startX = iconElement.offsetLeft;
@@ -140,7 +150,10 @@ document.addEventListener('mousemove', function(event) {
 // Delay the start of tracking by 2 seconds (2000 milliseconds)
 setTimeout(function() {
     shouldStartTracking = true;
-}, 1000);
+}, 1500);
+
+
+
 </script>
 
 

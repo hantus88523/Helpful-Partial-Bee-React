@@ -1063,8 +1063,8 @@ a {
   border-radius: 50%;
   background-color: lightgreen;
   position: absolute;
-  left: --9999;
-  top: -9999;
+  z-index: 9999;
+  display: none;
 }
 .cid-tBNpi72lFt {
   padding-top: 0rem;
