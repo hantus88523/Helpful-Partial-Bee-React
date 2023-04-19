@@ -151,7 +151,17 @@ setTimeout(function() {
     shouldStartTracking = true;
 }, 1500);
 
+//enlarge
+const circle = document.querySelector(".circle");
 
+ circle.addEventListener("transitionend", function() {
+ circle.classList.remove("enlarged");
+});
+
+
+document.addEventListener("click", function() {
+  circle.classList.add("enlarged");
+});
 
 </script>
 

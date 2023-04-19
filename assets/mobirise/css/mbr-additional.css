@@ -1065,6 +1065,25 @@ a {
   position: absolute;
   z-index: 9999;
   display: none;
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  animation: color-change 3s infinite;
+}
+@keyframes color-change {
+  0% {
+    background-color: lightgreen;
+  }
+  50% {
+    background-color: grey;
+  }
+  100% {
+    background-color: lightgreen;
+  }
+}
+.cid-tBNsVASRrB .circle.enlarged {
+  transform: scale(10);
+  opacity: 0;
 }
 .cid-tBNpi72lFt {
   padding-top: 0rem;
