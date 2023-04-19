@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
@@ -26,7 +27,10 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu3 cid-tBMdaKhNqV" once="menu" id="menu3-m">
+  <section data-bs-version="5.1" class="menu menu3 cid-tBNsVASRrB" once="menu" id="menu3-12">
+
+
+    
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
@@ -67,32 +71,84 @@
             </div>
         </div>
     </nav>
-</section>
+    
 
-<section data-bs-version="5.1" class="header12 cid-tBMgHPblTE" data-bg-video="https://www.youtube.com/watch?v=oj3-U0pJYUE" id="header12-n">
+<a class="circle"></a>
+
+<script>
+// Get the element with class name .circle"
+var iconElement = document.querySelector('.circle');
+
+// Set the initial position of the tracking object
+var startX = 0;
+var startY = 0;
+
+// Set the target position of the tracking object
+var targetX = 0;
+var targetY = 0;
+
+// Set a flag to indicate if the tracking should start or not
+var shouldStartTracking = false;
+
+// Set a flag to indicate if the tracking is in progress or not
+var isTrackingInProgress = false;
+
+// Function to update the position of the tracking object smoothly
+function updatePosition() {
+    // Calculate the distance between the current position and the target position
+    var distanceX = (targetX - startX) * 0.05; // Update with a percentage of window width
+    var distanceY = (targetY - startY) * 0.05; // Update with a percentage of window height
+
+    // Update the current position with the calculated distance
+    startX += distanceX;
+    startY += distanceY;
+
+    // Set the position of the icon element
+    iconElement.style.left = startX + 'px';
+    iconElement.style.top = startY + 'px';
+
+    // Check if the tracking is complete
+    if (Math.abs(distanceX) < 0.1 && Math.abs(distanceY) < 0.1) {
+        isTrackingInProgress = false;
+    } else {
+        // Request the next frame for smooth animation
+        requestAnimationFrame(updatePosition);
+    }
+}
+
+// Add event listener for mousemove event
+document.addEventListener('mousemove', function(event) {
+    // Adjust for the scroll position of the page
+    var scrollX = window.scrollX || window.pageXOffset;
+    var scrollY = window.scrollY || window.pageYOffset;
+
+    // If the tracking should start and it's not already in progress, set the target position and start the tracking
+    if (shouldStartTracking && !isTrackingInProgress) {
+        targetX = event.clientX + scrollX;
+        targetY = event.clientY + scrollY;
+        startX = iconElement.offsetLeft;
+        startY = iconElement.offsetTop;
+        isTrackingInProgress = true;
+        updatePosition();
+    } else {
+        // Update the target position in real-time
+        targetX = event.clientX + scrollX;
+        targetY = event.clientY + scrollY;
+    }
+});
+
+// Delay the start of tracking by 2 seconds (2000 milliseconds)
+setTimeout(function() {
+    shouldStartTracking = true;
+}, 1000);
+</script>
+
 
     
 
-    <div class="mbr-fallback-image disabled"></div>
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(53, 53, 53);">
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="card col-12 col-md-12 col-lg-9">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <h1 class="card-title mbr-fonts-style mb-3 display-5">
-                            <strong>Designing enjoyable interactions&nbsp;</strong></h1>
-                        <p class="mbr-text mbr-fonts-style display-7">From an <strong>industrial design</strong> background, I am drawn to crafting the <strong>exciting interactions</strong> between human and technology. My projects cover tangible <strong>hard products</strong>,&nbsp;<strong>IoT products</strong> and digital <strong>UI/UX products</strong>.&nbsp;&nbsp;</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
-<section data-bs-version="5.1" class="features15 cid-tBMnmd7JQU" id="features16-o">
+<section data-bs-version="5.1" class="features15 cid-tBNpi72lFt" id="features16-y">
 
     
 
@@ -105,11 +161,9 @@
                     <div class="text-wrapper">
                         <h6 class="card-title mbr-fonts-style display-2">
                             <strong>Eatin.</strong></h6>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                            Themes in the Mobirise website builder offer multiple blocks: intros, sliders, galleries, forms, articles, and so on. Start a project and click on the red plus buttons to see the blocks available for your theme.</p>
-                        <div class="mbr-section-btn mt-3">
-                            <a class="btn btn-warning display-4" href="https://mobiri.se">Learn more</a>
-                        </div>
+                        <p class="mbr-text mbr-fonts-style mb-4 display-5">
+                            EATin is a unique service that combines the convenience of food delivery with the comfort of a taxi ride.&nbsp;</p>
+                        <div class="mbr-section-btn mt-3"><a class="btn btn-white display-7" href="https://mobiri.se">Learn more</a></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-7">
@@ -120,8 +174,38 @@
             </div>
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2999396" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Made with &#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/landing-page-software.html">Landing Page Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/vimeoplayer/player.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section>
+
+<section data-bs-version="5.1" class="features16 cid-tBNpiTbR1W" id="features17-z">
+    
+
+    
+    
+    <div class="container-fluid">
+        <div class="content-wrapper">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/swing-in-8-1360x740.jpg" alt="Mobirise Website Builder">
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style display-2">
+                            <strong>Swing</strong></h6>
+                        <p class="mbr-text mbr-fonts-style mb-4 display-5">
+                            The chair allows the user an intuitive active sitting experience with the integration of a childhood movement.</p>
+                        <div class="mbr-section-btn mt-3"><a class="btn btn-white display-4" href="https://mobiri.se">
+                                Learn more
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2999396" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7"></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
-</body>
+  <input name="animation" type="hidden">
+  </body>
 </html>
