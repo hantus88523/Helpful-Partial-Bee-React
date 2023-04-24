@@ -1647,12 +1647,7 @@ a {
   }
 }
 .cid-tCmbEH9yN8 .image-wrapper img {
-  width: 100%;
-  object-fit: cover;
-}
-.cid-tCmbEH9yN8 model-viewer {
-  width: 400px;
-  height: 600px;
-  margin: 0 auto;
+  width: 600px;
+  height: 400px;
   background-color: grey;
 }
