@@ -120,7 +120,7 @@
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "anfkew6lfj",
+    "mbrsiteDomain": "11pzy5yjvm",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -132,8 +132,10 @@
     "dppsSwitcher": true,
     "spellingSwitch": true,
     "site_lang": "en",
-    "global_header_custom": "",
-    "global_before_html": ""
+    "global_header_custom": "<style>\n      /* CSS code for the loader */\n      .lds-circle {\n        display: inline-block;\n        position: fixed;\n        top: 50%;\n        left: 50%;\n        transform: translate(-50%, -50%) translateZ(1px);\n        z-index: 9999;\n      }\n      \n      .lds-circle > div {\n        display: inline-block;\n        width: 64px;\n        height: 64px;\n        margin: 8px;\n        border-radius: 50%;\n        background: #fff;\n        animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;\n      }\n\n      @keyframes lds-circle {\n        0%, 100% {\n          animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);\n        }\n        0% {\n          transform: rotateY(0deg);\n        }\n        50% {\n          transform: rotateY(1800deg);\n          animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);\n        }\n        100% {\n          transform: rotateY(3600deg);\n        }\n      }\n\n      /* CSS code for the overlay */\n      #overlay {\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background: rgba(255, 255, 255, 0.7); /* white background with 70% opacity */\n        z-index: 9998; /* make sure the overlay is behind the loader */\n      }\n    </style>",
+    "global_before_html": "\n",
+    "global_footer_custom": "",
+    "global_after_body": "<div id=\"loading-animation\">\n    <div id=\"overlay\"></div>\n    <div class=\"lds-circle\"><div></div></div>\n    </div>\n\n<script>\nwindow.addEventListener('load', function () {\n  const loadingAnimation = document.getElementById('loading-animation');\n  loadingAnimation.classList.add('hidden');\n});\n</script>\n\n\n\n"
   },
   "pages": {
     "index.html": {
@@ -800,7 +802,7 @@
         "title": "EATin.",
         "order": "1",
         "header_custom": "<script type=\"module\" src=\"https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js\"></script>",
-        "footer_custom": "<div id=\"loading-animation\">\n      <div class=\"lds-circle\"><div></div></div>\n    </div>\n\n<script>\nwindow.addEventListener('load', function () {\n  const loadingAnimation = document.getElementById('loading-animation');\n  loadingAnimation.classList.add('hidden');\n});\n\n</script>"
+        "footer_custom": ""
       },
       "components": [
         {
@@ -1251,37 +1253,6 @@
             },
             ".circle.hover": {
               "transform": "scale(1.5)"
-            },
-            ".lds-circle": {
-              "display": "inline-block",
-              "transform": "translateZ(1px)"
-            },
-            ".lds-circle > div": {
-              "display": "inline-block",
-              "width": "64px",
-              "height": "64px",
-              "margin": "8px",
-              "border-radius": "50%",
-              "background": "#fff",
-              "animation": "lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite"
-            },
-            "@keyframes lds-circle": {
-              "0%, 100%": {
-                "animation-timing-function": "cubic-bezier(0.5, 0, 1, 0.5)"
-              },
-              "0%": {
-                "transform": "rotateY(0deg)"
-              },
-              "50%": {
-                "transform": "rotateY(1800deg)",
-                "animation-timing-function": "cubic-bezier(0, 0.5, 0.5, 1)"
-              },
-              "100%": {
-                "transform": "rotateY(3600deg)"
-              }
-            },
-            ".hidden": {
-              "display": "none"
             }
           },
           "_name": "menu3",
