@@ -525,7 +525,8 @@ links.forEach(link => {
     </div>
 </section>
 
-<section data-bs-version="5.1" class="timeline3 cid-tDFrYjDsSn" id="Prototype-WEBPs">
+<div class="parent-element cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="1306">
+<section data-bs-version="5.1" class="timeline3" group="Timelines">
     
 
     
@@ -546,7 +547,7 @@ links.forEach(link => {
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-6">
                     <div class="image-wrapper">
-                        <img src="assets/images/01.webp" alt="Mobirise Website Builder" title="">
+                        <img src="assets/images/01.webp" alt="Mobirise Website Builder" title="" media-simple="true">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -569,7 +570,7 @@ links.forEach(link => {
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-6">
                     <div class="image-wrapper">
-                        <img src="assets/images/02.webp" alt="Mobirise Website Builder" title="">
+                        <img src="assets/images/02.webp" alt="Mobirise Website Builder" title="" media-simple="true">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -588,7 +589,7 @@ links.forEach(link => {
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-6">
                     <div class="image-wrapper">
-                        <img src="assets/images/03.webp" alt="Mobirise Website Builder" title="">
+                        <img src="assets/images/03.webp" alt="Mobirise Website Builder" title="" media-simple="true">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -610,7 +611,7 @@ links.forEach(link => {
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-6">
                     <div class="image-wrapper">
-                        <img src="assets/images/04.webp" alt="Mobirise Website Builder" title="">
+                        <img src="assets/images/04.webp" alt="Mobirise Website Builder" title="" media-simple="true">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -632,7 +633,7 @@ links.forEach(link => {
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-6">
                     <div class="image-wrapper">
-                        <img src="assets/images/05.webp" alt="Mobirise Website Builder" title="">
+                        <img src="assets/images/05.webp" alt="Mobirise Website Builder" title="" media-simple="true">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -654,7 +655,7 @@ links.forEach(link => {
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-6">
                     <div class="image-wrapper">
-                        <img src="assets/images/06.webp" alt="Mobirise Website Builder" title="">
+                        <img src="assets/images/06.webp" alt="Mobirise Website Builder" title="" media-simple="true">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -676,7 +677,7 @@ links.forEach(link => {
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-6">
                     <div class="image-wrapper">
-                        <img src="assets/images/07.webp" alt="Mobirise Website Builder" title="">
+                        <img src="assets/images/07.webp" alt="Mobirise Website Builder" title="" media-simple="true">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -698,7 +699,7 @@ links.forEach(link => {
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-6">
                     <div class="image-wrapper">
-                        <img src="assets/images/08.webp" alt="Mobirise Website Builder" title="">
+                        <img src="assets/images/08.webp" alt="Mobirise Website Builder" title="" media-simple="true">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -717,7 +718,52 @@ links.forEach(link => {
             
         </div>
     </div>
+    
+
+
 </section>
+
+<div class="button-container">
+<button id="show-more-btn">Show More</button>
+<button id="show-less-btn" style="display:none;">Show Less</button>
+</div>
+
+</div><script class="cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="1306">
+const timelineSection = document.querySelector('.timeline3');
+const timelineElements = timelineSection.querySelectorAll('.timeline-element');
+const showMoreBtn = document.querySelector('#show-more-btn');
+const showLessBtn = document.querySelector('#show-less-btn');
+
+// Store the current scroll position
+const initialScrollPosition = window.pageYOffset;
+
+// Set initial height to 500px
+timelineSection.style.maxHeight = "1300px";
+
+// Hide the "Show Less" button initially
+showLessBtn.style.display = "none";
+
+// Add click event listener to the "Show More" button
+showMoreBtn.addEventListener('click', () => {
+  // Set max height to allow all elements to be visible
+  timelineSection.style.maxHeight = "none";
+  // Hide the "Show More" button and show the "Show Less" button
+  showMoreBtn.style.display = "none";
+  showLessBtn.style.display = "inline-block";
+});
+
+// Add click event listener to the "Show Less" button
+showLessBtn.addEventListener('click', () => {
+  // Set max height back to 500px
+  timelineSection.style.maxHeight = "1300px";
+  // Hide the "Show Less" button and show the "Show More" button
+  showLessBtn.style.display = "none";
+  showMoreBtn.style.display = "inline-block";
+  // Scroll back to the original position
+  const timelineSectionRect = timelineSection.getBoundingClientRect();
+  window.scrollBy(0, timelineSectionRect.top);
+});
+</script>
 
 <section data-bs-version="5.1" class="content5 cid-tDFobK6F2O" id="content5-2u">
     
@@ -806,7 +852,7 @@ links.forEach(link => {
     
 
     
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2999396" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Created with &#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/web-design-program.html">Website Design Program</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2999396" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Made with &#8204;</p><a style="z-index:1" href="https://mobirise.com/drag-drop-website-builder.html">Drag and Drop Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
   <input name="animation" type="hidden">
