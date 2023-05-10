@@ -2219,7 +2219,7 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
   display: block;
-  margin: 0 auto;
+  margin-top: 2rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
