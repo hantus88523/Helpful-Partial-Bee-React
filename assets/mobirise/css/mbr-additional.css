@@ -2193,8 +2193,9 @@ a {
 }
 .cid-tDFrYjDsSn .timeline3::after {
   content: "";
+  margin: 0;
+  padding: 0;
   position: absolute;
-  padding-bottom: 1rem;
   bottom: 0;
   left: 0;
   width: 100%;
