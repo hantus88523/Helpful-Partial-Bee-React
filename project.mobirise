@@ -2120,6 +2120,7 @@
             ".timeline3::after": {
               "content": "\"\"",
               "position": "absolute",
+              "margin-bottom": "-1px",
               "bottom": "0",
               "left": "0",
               "width": "100%",
