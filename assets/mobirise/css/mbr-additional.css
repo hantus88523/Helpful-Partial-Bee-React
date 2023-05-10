@@ -2190,6 +2190,8 @@ a {
   max-height: 1300px;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .cid-tDFrYjDsSn .timeline3::after {
   content: "";
