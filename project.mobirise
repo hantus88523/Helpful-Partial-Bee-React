@@ -122,7 +122,7 @@
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "rlxh9tgfxj",
+    "mbrsiteDomain": "0kohjlbrko",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -1936,7 +1936,7 @@
                 "min-height": "(@carouselHeight * 32px)",
                 "img": {
                   "max-height": "(@carouselHeight * 50px)",
-                  "object-fit": "contain"
+                  "object-fit": "fill"
                 }
               },
               ".container .carousel-control": {

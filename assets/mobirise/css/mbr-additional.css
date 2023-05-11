@@ -1974,7 +1974,7 @@ a {
   }
   .cid-tDWgoaLDxl .carousel img {
     max-height: 300px;
-    object-fit: contain;
+    object-fit: fill;
   }
   .cid-tDWgoaLDxl .container .carousel-control {
     margin-bottom: 0;
