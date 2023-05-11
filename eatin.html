@@ -1,0 +1,874 @@
+
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <!-- Site made with Mobirise Website Builder v5.8.4, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.8.4, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/hc-design-96x96.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>EATin.</title>
+  <link rel="stylesheet" href="assets/dev-icons/css/devicon.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link href="assets/fonts/style.css" rel="stylesheet">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  
+      <style>
+      /* CSS code for the loader */
+      .lds-circle {
+        display: inline-block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translateZ(1px);
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      .lds-circle.fade-out {
+        opacity: 0;
+      }
+      
+      .lds-circle > div {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        background: silver;
+        animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+
+      @keyframes lds-circle {
+        0%, 100% {
+          animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+        }
+        0% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          transform: rotateY(1800deg);
+          animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+        }
+        100% {
+          transform: rotateY(3600deg);
+        }
+      }
+
+      /* CSS code for the overlay */
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff; /* white background */
+        z-index: 9998; /* make sure the overlay is behind the loader */
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      #overlay.fade-out {
+        opacity: 0;
+      }
+    </style>
+
+
+
+
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+</head>
+<body>
+  <div id="loading-animation">
+    <div id="overlay"></div>
+    <div class="lds-circle"><div></div></div>
+    </div>
+
+<script>
+      // Wait for the page to load
+      window.onload = function() {
+        // Get the loader and overlay elements
+        const loader = document.querySelector('.lds-circle');
+        const overlay = document.querySelector('#overlay');
+        
+        // Add the "fade-out" class to the loader and overlay elements
+        loader.classList.add('fade-out');
+        overlay.classList.add('fade-out');
+        
+        // Wait for the opacity transition to complete
+        setTimeout(function() {
+          // Remove the loader and overlay elements from the DOM
+          loader.parentNode.removeChild(loader);
+          overlay.parentNode.removeChild(overlay);
+        }, 500);
+      }
+    </script>
+  <section data-bs-version="5.1" class="menu menu3 cid-tDV35ugxC0" once="menu" id="menu3-3f">
+
+    
+
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        
+
+        
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/hc-design-96x96.png" alt="" style="height: 3rem;">
+                    </a>
+                </span>
+                
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#Project-1">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+       
+
+    </nav>
+    
+    <div class="circle"></div>
+    
+     
+    
+
+
+
+<script>
+// Get the element with class name .circle"
+var iconElement = document.querySelector('.circle');
+
+// Set the initial position of the tracking object
+var startX = 0;
+var startY = 0;
+
+// Set the target position of the tracking object
+var targetX = 0;
+var targetY = 0;
+
+// Set a flag to indicate if the tracking should start or not
+var shouldStartTracking = false;
+
+// Set a flag to indicate if the tracking is in progress or not
+var isTrackingInProgress = false;
+
+// Function to update the position of the tracking object smoothly
+function updatePosition() {
+    // Calculate the distance between the current position and the target position
+    var distanceX = (targetX - startX) * 0.05; // Update with a percentage of window width
+    var distanceY = (targetY - startY) * 0.05; // Update with a percentage of window height
+
+    // Update the current position with the calculated distance
+    startX += distanceX;
+    startY += distanceY;
+
+    // Set the position of the icon element
+    iconElement.style.left = startX + 'px';
+    iconElement.style.top = startY + 'px';
+
+    // Check if the tracking is complete
+    if (Math.abs(distanceX) < 0.1 && Math.abs(distanceY) < 0.1) {
+        isTrackingInProgress = false;
+    } else {
+        // Request the next frame for smooth animation
+        requestAnimationFrame(updatePosition);
+    }
+}
+
+// Add event listener for mousemove event
+document.addEventListener('mousemove', function(event) {
+    // Adjust for the scroll position of the page
+    var scrollX = window.scrollX || window.pageXOffset;
+    var scrollY = window.scrollY || window.pageYOffset;
+
+    // If the tracking should start and it's not already in progress, set the target position and start the tracking
+    if (shouldStartTracking && !isTrackingInProgress) {
+        iconElement.style.display = 'block';
+        targetX = event.clientX + scrollX;
+        targetY = event.clientY + scrollY;
+        startX = iconElement.offsetLeft;
+        startY = iconElement.offsetTop;
+        isTrackingInProgress = true;
+        updatePosition();
+    } else {
+        // Update the target position in real-time
+        targetX = event.clientX + scrollX;
+        targetY = event.clientY + scrollY;
+    }
+});
+
+// Delay the start of tracking by 2 seconds (2000 milliseconds)
+setTimeout(function() {
+    shouldStartTracking = true;
+}, 1500);
+
+//enlarge
+const circle = document.querySelector(".circle");
+
+ circle.addEventListener("transitionend", function() {
+ circle.classList.remove("enlarged");
+});
+
+
+document.addEventListener("click", function() {
+  circle.classList.add("enlarged");
+});
+
+
+//HOVER
+
+const links = document.querySelectorAll("a");
+
+
+
+circle.style.pointerEvents = "none"; // disable pointer events on the .circle element
+
+links.forEach(link => {
+  link.addEventListener("mouseenter", function() {
+    circle.classList.add("hover");
+  });
+
+  link.addEventListener("mouseleave", function() {
+    circle.classList.remove("hover");
+  });
+});
+
+
+
+
+
+</script>
+
+
+    
+
+</section>
+
+<section data-bs-version="5.1" class="header9 cid-tCvSSqk2oN" id="header9-1h">
+
+    
+
+    
+    
+
+    <div class="text-center container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <div class="image-wrap mb-4">
+                    <img src="assets/images/comp-1-2.gif" alt="Mobirise Website Builder">
+                </div>
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1">Eatin.</h1>
+                
+                
+                <h2 class="mbr-title-2 mbr-fonts-style mb-3 display-5">Autonomous taxi and food delivery<br></h2>
+                
+                <p class="mbr-text mbr-fonts-style display-7">Intro with an image above text. Click on the image to replace it. Key differences from traditional website builders: Minimalistic, extremely easy-to-use interface; Mobile-friendliness, latest website blocks and techniques "out-the-box"; Free for commercial and non-profit use.<br><br></p>
+                    
+                <div class="mbr-section-btn mt-3"><a class="btn btn-warning display-4" href="eatin.html#3D-Model">Skip to Industrial design</a>
+                    <a class="btn btn-warning display-4" href="eatin.html#Prototype-WEBPs">Skip to APP prototype</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features15 cid-tCmbEH9yN8" id="3D-Model">
+
+    
+    
+    
+    
+
+    
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg">
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style display-2">Exterior Model</h6>
+                        <p class="mbr-text mbr-fonts-style mb-4 display-7">
+                            <br>Themes in the Mobirise website builder offer multiple blocks: intros, sliders, galleries, forms, articles, and so on. Start a project and click on the red plus buttons to see the blocks available for your theme.</p>
+                        
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="image-wrapper">
+                        <model-viewer src="assets/models/car.glb" ar="" ar-modes="webxr scene-viewer quick-look" camera-controls="" poster="poster.webp" shadow-intensity="1" auto-rotate=""> </model-viewer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+
+    
+</section>
+
+<section data-bs-version="5.1" class="content14 cid-tCw6U8Xywk" id="content14-1u">
+    
+
+    
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                    <h3 class="mbr-section-title mbr-fonts-style mb-4 display-5">
+                        <strong>About this project</strong></h3>
+                <ul class="list mbr-fonts-style display-7">
+                    <li><strong>My role : Individual</strong><br>User research/user experience/industrial design/car packaging</li>
+                    <li><strong>Tools involved</strong><br>Alias, Fusion360, Keyshot, Figma, Adobe Illustrator, Procreate, Clay, Hand</li>
+                    <li><strong>Project duration</strong><br>User research&amp; Industrial/car design: 2 months, UI/UX prototype: 2 weeks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-tCvCLWYWEM" id="content5-1e">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2">
+                    Problem</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    You can use content blocks to arrange your articles, large texts, instructions. Combine these blocks with media blocks to add illustrations and video tutorials. You can use various content blocks to work with your text. Add quotations, lists, buttons. Select your text to change its formatting or add links. Mobirise is a simple website builder that helps you create amazing web pages without knowing any code.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-tCvD7MUDgz" id="content5-1f">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2">
+                    Goal</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    You can use content blocks to arrange your articles, large texts, instructions. Combine these blocks with media blocks to add illustrations and video tutorials. You can use various content blocks to work with your text. Add quotations, lists, buttons. Select your text to change its formatting or add links. Mobirise is a simple website builder that helps you create amazing web pages without knowing any code.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content9 cid-tCwaN0CxaX" id="content9-1v">
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="counter-container col-md-12 col-lg-9">
+                
+                <div class="mbr-text mbr-fonts-style display-7">
+                    <ol>
+                        <li><strong>Really No Coding </strong>You don't have to code to create your own site. Select one of available themes in the Mobirise sitebuilder. <a href="https://mobiri.se/">Try it now!</a></li>
+                        <li><strong>Mobile Friendly. </strong>All sites you create with the Mobirise web builder are mobile-friendly natively. No special actions required. <a href="https://mobiri.se/">Try it now!</a></li>
+                        <li><strong>Super Unique Styles. </strong>Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks. <a href="https://mobiri.se/">Try it now!</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-tCDnztSVhC" id="content5-26">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2">
+                    Research</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    You can use content blocks to arrange your articles, large texts, instructions. Combine these blocks with media blocks to add illustrations and video tutorials. You can use various content blocks to work with your text. Add quotations, lists, buttons. Select your text to change its formatting or add links. Mobirise is a simple website builder that helps you create amazing web pages without knowing any code.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-tCDoqg1d1J" id="image3-28">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="image-wrapper">
+                    <img src="assets/images/research-charts-2136x1183.png" alt="Mobirise Website Builder">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-tCDnUp4PeS" id="content5-27">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2">
+                    Persona</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    You can use content blocks to arrange your articles, large texts, instructions. Combine these blocks with media blocks to add illustrations and video tutorials. You can use various content blocks to work with your text. Add quotations, lists, buttons. Select your text to change its formatting or add links. Mobirise is a simple website builder that helps you create amazing web pages without knowing any code.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-tCDsJVcHsm" id="image3-2b">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="image-wrapper">
+                    <img src="assets/images/persona-2136x1087.png" alt="Mobirise Website Builder">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-tCDqaMgcxJ" id="content5-2a">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2">
+                    Empathy map</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    You can use content blocks to arrange your articles, large texts, instructions. Combine these blocks with media blocks to add illustrations and video tutorials. You can use various content blocks to work with your text. Add quotations, lists, buttons. Select your text to change its formatting or add links. Mobirise is a simple website builder that helps you create amazing web pages without knowing any code.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-tCDu6qETd0" id="image3-2d">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="image-wrapper">
+                    <img src="assets/images/empathy-map-2136x2150.png" alt="Mobirise Website Builder">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-tCGV7KoGLL" id="content5-2f">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2">UX Design : User flow and wireframe</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    You can use content blocks to arrange your articles, large texts, instructions. Combine these blocks with media blocks to add illustrations and video tutorials. You can use various content blocks to work with your text. Add quotations, lists, buttons. Select your text to change its formatting or add links. Mobirise is a simple website builder that helps you create amazing web pages without knowing any code.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-tCHORAwWMk" id="image3-2h">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="image-wrapper">
+                    <img src="assets/images/user-flow-2136x1736.png" alt="Mobirise Website Builder">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-tCGVioQtXD" id="image3-2g">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9">
+                <div class="image-wrapper">
+                    <img src="assets/images/wireframe-1916x650.png" alt="Mobirise Website Builder">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="parent-element cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="5942">
+<section data-bs-version="5.1" class="timeline3" group="Timelines">
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">UX design : Prototype</h3>
+            
+        </div>
+        <div class="timelines-container mt-4">
+            <div class="row timeline-element first-separline mb-5">
+                <div class="timeline-date col-12">
+                    <div class="timeline-date-wrapper">
+                        
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-12 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/01.webp" alt="Mobirise Website Builder" title="" media-simple="true">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="timeline-text-wrapper">
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong>Home</strong></h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">The home screen of the APP is designed to display the primary functions, such as the user's location and a swipeable container that can be used to initiate the trigger service at the bottom.</p><h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong><br></strong><strong>User and settings</strong></h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">On the user and settings page, there are several features available for users to easily manage their account, customize their settings, and navigate through the app as per their requirements.</p>
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5">
+                            <strong><br></strong><strong>History</strong></h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">The history page of the app stores records of past journeys, enabling users to review and seek assistance for their previous trips on the service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-element first-separline mb-5">
+                <div class="timeline-date col-12">
+                    <div class="timeline-date-wrapper">
+                        
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-12 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/02.webp" alt="Mobirise Website Builder" title="" media-simple="true">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="timeline-text-wrapper">
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong>Swipeable edge container component</strong></h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">The swipeable container on the edge of the screen is used to display ads for seasonal promotions and services at the bottom of the app. It is also a mandatory step for users to activate the container in order to start using the service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-element first-separline mb-5">
+                <div class="timeline-date col-12">
+                    <div class="timeline-date-wrapper">
+                        
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-12 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/03.webp" alt="Mobirise Website Builder" title="" media-simple="true">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="timeline-text-wrapper">
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong>Form Builder</strong>
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-element first-separline mb-5">
+                <div class="timeline-date col-12">
+                    <div class="timeline-date-wrapper">
+                        
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-12 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/04.webp" alt="Mobirise Website Builder" title="" media-simple="true">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="timeline-text-wrapper">
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong>Form Builder</strong>
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Use Mobirise website building software to create multiple sites for commercial and non-profit projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-element first-separline mb-5">
+                <div class="timeline-date col-12">
+                    <div class="timeline-date-wrapper">
+                        
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-12 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/05.webp" alt="Mobirise Website Builder" title="" media-simple="true">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="timeline-text-wrapper">
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong>Form Builder</strong>
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. You don't have to code to create your own site. Select one of available themes in the Mobirise sitebuilder.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-element first-separline mb-5">
+                <div class="timeline-date col-12">
+                    <div class="timeline-date-wrapper">
+                        
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-12 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/06.webp" alt="Mobirise Website Builder" title="" media-simple="true">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="timeline-text-wrapper">
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong>Form Builder</strong>
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. All sites you create with the Mobirise web builder are mobile-friendly natively. No special actions required.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-element first-separline mb-5">
+                <div class="timeline-date col-12">
+                    <div class="timeline-date-wrapper">
+                        
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-12 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/07.webp" alt="Mobirise Website Builder" title="" media-simple="true">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="timeline-text-wrapper">
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong>Form Builder</strong>
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-element first-separline mb-5">
+                <div class="timeline-date col-12">
+                    <div class="timeline-date-wrapper">
+                        
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-12 col-md-6">
+                    <div class="image-wrapper">
+                        <img src="assets/images/08.webp" alt="Mobirise Website Builder" title="" media-simple="true">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="timeline-text-wrapper">
+                        <h4 class="mbr-timeline-title mbr-fonts-style mb-0 display-5"><strong>Form Builder</strong>
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Use Mobirise website building software to create multiple sites for commercial and non-profit projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+    
+
+
+</section>
+
+<div class="button-container">
+<button id="show-more-btn">Show More</button>
+<button id="show-less-btn" style="display:none;">Show Less</button>
+</div>
+
+</div><script class="cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="5942">
+const timelineSection = document.querySelector('.timeline3');
+const timelineElements = timelineSection.querySelectorAll('.timeline-element');
+const showMoreBtn = document.querySelector('#show-more-btn');
+const showLessBtn = document.querySelector('#show-less-btn');
+
+// Store the current scroll position
+const initialScrollPosition = window.pageYOffset;
+
+// Set initial height to 500px
+timelineSection.style.maxHeight = "1300px";
+
+// Hide the "Show Less" button initially
+showLessBtn.style.display = "none";
+
+// Add click event listener to the "Show More" button
+showMoreBtn.addEventListener('click', () => {
+  // Set max height to allow all elements to be visible
+  timelineSection.style.maxHeight = "none";
+  // Reduce the height of the gradient overlay
+  timelineSection.style.setProperty('--gradient-height', '1%');
+  // Hide the "Show More" button and show the "Show Less" button
+  showMoreBtn.style.display = "none";
+  showLessBtn.style.display = "inline-block";
+});
+
+// Add click event listener to the "Show Less" button
+showLessBtn.addEventListener('click', () => {
+  // Set max height back to 500px
+  timelineSection.style.maxHeight = "1300px";
+  // Reset the height of the gradient overlay
+  timelineSection.style.setProperty('--gradient-height', '20%');
+  // Hide the "Show Less" button and show the "Show More" button
+  showLessBtn.style.display = "none";
+  showMoreBtn.style.display = "inline-block";
+  // Scroll back to the original position
+  const timelineSectionRect = timelineSection.getBoundingClientRect();
+  window.scrollBy(0, timelineSectionRect.top);
+});
+</script>
+
+<section data-bs-version="5.1" class="content5 cid-tDFobK6F2O" id="content5-2u">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2">Prototype screens</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    You can use content blocks to arrange your articles, large texts, instructions. Combine these blocks with media blocks to add illustrations and video tutorials. You can use various content blocks to work with your text. Add quotations, lists, buttons. Select your text to change its formatting or add links. Mobirise is a simple website builder that helps you create amazing web pages without knowing any code.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-tDW6tSIl8Y" id="image3-3k">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="image-wrapper">
+                    <img src="assets/images/-2023-05-08-200835-1317x731.png" alt="Mobirise Website Builder">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="header9 cid-tDFHANzAES" id="header9-3a">
+
+    
+
+    
+    
+
+    <div class="text-center container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                
+                
+                
+                <div class="mbr-section-btn mt-3"><a class="btn btn-warning display-4" href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRDjBXcFGh2P6plXYrLIUub%2FEATin.%3Fpage-id%3D38%253A2771%26type%3Ddesign%26node-id%3D38-3212%26viewport%3D533%252C584%252C0.1%26scaling%3Dscale-down%26starting-point-node-id%3D39%253A6308" target="_blank">Try prototype</a>
+                    <a class="btn btn-warning display-4" href="https://www.figma.com/proto/RDjBXcFGh2P6plXYrLIUub/EATin.?page-id=38%3A2771&type=design&node-id=38-3212&viewport=533%2C584%2C0.1&scaling=scale-down&starting-point-node-id=39%3A6308" target="_blank">View Prototype on Figma</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-tDVZTF10vx" once="footers" id="footer7-3j">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2025 Mobirise - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2999396" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Made with &#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/landing-page-software.html">Landing Page Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+  <input name="animation" type="hidden">
+  </body>
+</html>
