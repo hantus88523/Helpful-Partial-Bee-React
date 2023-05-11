@@ -1482,7 +1482,7 @@ a {
 @media (max-width: 767px) {
   .cid-tCmbEH9yN8 model-viewer {
     width: auto;
-    height: auto;
+    height: 600px;
     background-color: lightgrey;
     border-radius: 2rem;
   }

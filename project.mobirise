@@ -1117,7 +1117,7 @@
             "@media (max-width: 767px)": {
               "model-viewer": {
                 "width": "auto",
-                "height": "auto",
+                "height": "600px",
                 "background-color": "lightgrey",
                 "border-radius": "2rem"
               }
