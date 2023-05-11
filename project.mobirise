@@ -117,12 +117,12 @@
         "file": "@PROJECT_PATH@/fonts/Poppins-Thin/font.ttf"
       }
     ],
-    "uniqCompNum": 135,
+    "uniqCompNum": 142,
     "versionPublish": "5.8.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "w2zddaa0po",
+    "mbrsiteDomain": "plrtqnidgp",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -1098,7 +1098,7 @@
                 "padding": "2rem"
               },
               "@media (min-width: 992px)": {
-                "padding": "2rem 10rem",
+                "padding": "2rem 10.5rem",
                 ".text-wrapper": {
                   "padding-right": "2rem"
                 }
