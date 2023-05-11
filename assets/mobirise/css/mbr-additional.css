@@ -1479,14 +1479,6 @@ a {
   width: auto;
   height: 400px;
 }
-@media (max-width: 767px) {
-  .cid-tCmbEH9yN8 model-viewer {
-    width: auto;
-    height: 600px;
-    background-color: lightgrey;
-    border-radius: 2rem;
-  }
-}
 .cid-tCw6U8Xywk {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1960,28 +1952,28 @@ a {
 }
 @media (min-width: 992px) {
   .cid-tDWgoaLDxl .carousel {
-    min-height: 700px;
+    min-height: 600px;
   }
   .cid-tDWgoaLDxl .carousel img {
-    max-height: 700px;
+    max-height: 600px;
     object-fit: contain;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .cid-tDWgoaLDxl .carousel {
-    min-height: 455px;
+    min-height: 390px;
   }
   .cid-tDWgoaLDxl .carousel img {
-    max-height: 455px;
+    max-height: 390px;
     object-fit: contain;
   }
 }
 @media (max-width: 767px) {
   .cid-tDWgoaLDxl .carousel {
-    min-height: 224px;
+    min-height: 192px;
   }
   .cid-tDWgoaLDxl .carousel img {
-    max-height: 224px;
+    max-height: 192px;
     object-fit: contain;
   }
   .cid-tDWgoaLDxl .container .carousel-control {
@@ -2018,11 +2010,11 @@ a {
   position: absolute;
   margin: auto;
   bottom: 0;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 0rem !important;
 }
 @media (max-width: 767px) {
   .cid-tDWgoaLDxl .carousel-indicators {
-    top: 9.3rem;
+    top: 8.3rem;
   }
 }
 .cid-tDWgoaLDxl .carousel-indicators li {
@@ -2074,7 +2066,7 @@ a {
 @media (max-width: 767px) {
   .cid-tDWgoaLDxl .carousel-control {
     transform: scale(0.6);
-    top: 10rem;
+    top: 9rem;
   }
 }
 .cid-tDWgoaLDxl img {
