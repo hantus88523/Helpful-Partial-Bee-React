@@ -1784,8 +1784,6 @@ a {
   max-height: 1300px;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 .cid-tDFrYjDsSn .timeline3::after {
   content: "";
@@ -1793,12 +1791,10 @@ a {
   padding: 0;
   position: absolute;
   bottom: 0;
-  padding-bottom: 3rem;
-  z-index: 999;
   left: 0;
   width: 100%;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  height: var(--gradient-height, 20%);
+  height: 20%;
 }
 .cid-tDFrYjDsSn .parent-element {
   height: auto;
