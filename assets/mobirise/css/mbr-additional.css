@@ -1420,6 +1420,9 @@ a {
   border-radius: 999px;
   box-shadow: none;
 }
+.cid-tCvSSqk2oN img {
+  border-radius: 2rem;
+}
 .cid-tCmbEH9yN8 {
   padding-top: 0rem;
   padding-bottom: 0rem;
@@ -1470,6 +1473,7 @@ a {
   width: auto;
   height: 400px;
   background-color: lightgrey;
+  border-radius: 2rem;
 }
 .cid-tCmbEH9yN8 model-viewer {
   width: auto;
@@ -1479,6 +1483,8 @@ a {
   .cid-tCmbEH9yN8 model-viewer {
     width: auto;
     height: 200px;
+    background-color: lightgrey;
+    border-radius: 2rem;
   }
 }
 .cid-tCw6U8Xywk {
@@ -1726,6 +1732,7 @@ a {
 }
 .cid-tCGVioQtXD img {
   width: 100%;
+  border-radius: 2rem;
 }
 .cid-tDFrYjDsSn {
   padding-top: 5rem;
@@ -1908,6 +1915,7 @@ a {
 }
 .cid-tDW6tSIl8Y img {
   width: 100%;
+  border-radius: 2rem;
 }
 .cid-tDFHANzAES {
   padding-top: 0rem;
