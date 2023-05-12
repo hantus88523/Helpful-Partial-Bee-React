@@ -1493,7 +1493,7 @@ a {
 .cid-tCmbEH9yN8 model-viewer {
   width: auto;
   height: 400px;
-  --progress-bar-color: transparent;
+  background-color: white;
 }
 .cid-tCmbEH9yN8 .mbr-text,
 .cid-tCmbEH9yN8 .mbr-section-btn {
@@ -1501,24 +1501,6 @@ a {
 }
 .cid-tCmbEH9yN8 .card-title {
   text-align: left;
-}
-.cid-tCmbEH9yN8 model-viewer::part(controls-spinner) {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin: auto;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .cid-tDXDWNJ88n {
   padding-top: 0px;
