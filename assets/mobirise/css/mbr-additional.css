@@ -1493,6 +1493,7 @@ a {
 .cid-tCmbEH9yN8 model-viewer {
   width: auto;
   height: 400px;
+  --progress-bar-color: transparent;
 }
 .cid-tCmbEH9yN8 .mbr-text,
 .cid-tCmbEH9yN8 .mbr-section-btn {
@@ -1500,9 +1501,6 @@ a {
 }
 .cid-tCmbEH9yN8 .card-title {
   text-align: left;
-}
-.cid-tCmbEH9yN8 model-viewer::part(controls-progress-bar) {
-  display: none;
 }
 .cid-tCmbEH9yN8 model-viewer::part(controls-spinner) {
   display: block;
