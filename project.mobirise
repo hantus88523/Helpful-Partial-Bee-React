@@ -1127,7 +1127,8 @@
             "model-viewer": {
               "width": "auto",
               "height": "400px",
-              "background-color": "#FFFFFF",
+              "background-color": "#F8F8F8",
+              "border-radius": "2rem",
               "--progress-bar-color": "#AAAAAA"
             },
             ".mbr-text, .mbr-section-btn": {
