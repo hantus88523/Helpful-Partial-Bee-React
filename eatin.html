@@ -13,11 +13,14 @@
   
   
   <title>EATin.</title>
+  <link rel="stylesheet" href="assets/dev-icons/css/devicon.min.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link href="assets/fonts/style.css" rel="stylesheet">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
@@ -115,7 +118,163 @@
         }, 500);
       }
     </script>
-  <section data-bs-version="5.1" class="header9 cid-tCvSSqk2oN" id="Project-Header">
+  <section data-bs-version="5.1" class="menu menu3 cid-tE3Xc3sbyC" once="menu" id="Top">
+
+    
+
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        
+
+        
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/hc-design-96x96.png" alt="" style="height: 3rem;">
+                    </a>
+                </span>
+                
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#Project-1">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+       
+
+    </nav>
+    
+    <div class="circle"></div>
+    
+     
+    
+
+
+
+<script>
+// Get the element with class name .circle"
+var iconElement = document.querySelector('.circle');
+
+// Set the initial position of the tracking object
+var startX = 0;
+var startY = 0;
+
+// Set the target position of the tracking object
+var targetX = 0;
+var targetY = 0;
+
+// Set a flag to indicate if the tracking should start or not
+var shouldStartTracking = false;
+
+// Set a flag to indicate if the tracking is in progress or not
+var isTrackingInProgress = false;
+
+// Function to update the position of the tracking object smoothly
+function updatePosition() {
+    // Calculate the distance between the current position and the target position
+    var distanceX = (targetX - startX) * 0.05; // Update with a percentage of window width
+    var distanceY = (targetY - startY) * 0.05; // Update with a percentage of window height
+
+    // Update the current position with the calculated distance
+    startX += distanceX;
+    startY += distanceY;
+
+    // Set the position of the icon element
+    iconElement.style.left = startX + 'px';
+    iconElement.style.top = startY + 'px';
+
+    // Check if the tracking is complete
+    if (Math.abs(distanceX) < 0.1 && Math.abs(distanceY) < 0.1) {
+        isTrackingInProgress = false;
+    } else {
+        // Request the next frame for smooth animation
+        requestAnimationFrame(updatePosition);
+    }
+}
+
+// Add event listener for mousemove event
+document.addEventListener('mousemove', function(event) {
+    // Adjust for the scroll position of the page
+    var scrollX = window.scrollX || window.pageXOffset;
+    var scrollY = window.scrollY || window.pageYOffset;
+
+    // If the tracking should start and it's not already in progress, set the target position and start the tracking
+    if (shouldStartTracking && !isTrackingInProgress) {
+        iconElement.style.display = 'block';
+        targetX = event.clientX + scrollX;
+        targetY = event.clientY + scrollY;
+        startX = iconElement.offsetLeft;
+        startY = iconElement.offsetTop;
+        isTrackingInProgress = true;
+        updatePosition();
+    } else {
+        // Update the target position in real-time
+        targetX = event.clientX + scrollX;
+        targetY = event.clientY + scrollY;
+    }
+});
+
+// Delay the start of tracking by 2 seconds (2000 milliseconds)
+setTimeout(function() {
+    shouldStartTracking = true;
+}, 1500);
+
+//enlarge
+const circle = document.querySelector(".circle");
+
+ circle.addEventListener("transitionend", function() {
+ circle.classList.remove("enlarged");
+});
+
+
+document.addEventListener("click", function() {
+  circle.classList.add("enlarged");
+});
+
+
+//HOVER
+
+const links = document.querySelectorAll("a");
+
+
+
+circle.style.pointerEvents = "none"; // disable pointer events on the .circle element
+
+links.forEach(link => {
+  link.addEventListener("mouseenter", function() {
+    circle.classList.add("hover");
+  });
+
+  link.addEventListener("mouseleave", function() {
+    circle.classList.remove("hover");
+  });
+});
+
+
+
+
+
+</script>
+
+
+    
+
+</section>
+
+<section data-bs-version="5.1" class="header9 cid-tCvSSqk2oN" id="Project-Header">
 
     
 
@@ -406,7 +565,7 @@
     </div>
 </section>
 
-<div class="parent-element cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="14816">
+<div class="parent-element cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="132">
 <section data-bs-version="5.1" class="timeline3" group="Timelines">
     
 
@@ -608,7 +767,7 @@
 <button id="show-less-btn" style="display:none;">Show Less</button>
 </div>
 
-</div><script class="cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="14816">
+</div><script class="cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="132">
 const timelineSection = document.querySelector('.timeline3');
 const timelineElements = timelineSection.querySelectorAll('.timeline-element');
 const showMoreBtn = document.querySelector('#show-more-btn');
@@ -722,12 +881,12 @@ showLessBtn.addEventListener('click', () => {
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-9">
-                <div class="carousel slide" id="tE3UiDeQ7F" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
+                <div class="carousel slide" id="tE3XmMsv4L" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
                     
                     <ol class="carousel-indicators">
-                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tE3UiDeQ7F" data-bs-target="#tE3UiDeQ7F"></li>
-                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#tE3UiDeQ7F" data-bs-target="#tE3UiDeQ7F"></li>
-                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#tE3UiDeQ7F" data-bs-target="#tE3UiDeQ7F"></li>
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tE3XmMsv4L" data-bs-target="#tE3XmMsv4L"></li>
+                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#tE3XmMsv4L" data-bs-target="#tE3XmMsv4L"></li>
+                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#tE3XmMsv4L" data-bs-target="#tE3XmMsv4L"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item slider-image item active">
@@ -749,11 +908,11 @@ showLessBtn.addEventListener('click', () => {
                         </div>
                         
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tE3UiDeQ7F">
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tE3XmMsv4L">
                         <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Previous</span>
                     </a>
-                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tE3UiDeQ7F">
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tE3XmMsv4L">
                         <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Next</span>
                     </a>
@@ -778,7 +937,7 @@ showLessBtn.addEventListener('click', () => {
             </div>
         </div>
     </div>
-</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
   <input name="animation" type="hidden">
