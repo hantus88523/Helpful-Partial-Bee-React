@@ -118,7 +118,7 @@
         }, 500);
       }
     </script>
-  <section data-bs-version="5.1" class="menu menu3 cid-tErbkNIDU1" once="menu" id="menu3-4v">
+  <section data-bs-version="5.1" class="menu menu3 cid-tEJ9CuvtlY" once="menu" id="menu3-70">
 
     
 
@@ -146,7 +146,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#Project-1">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/index.html" onclick="localStorage.setItem('scrollPosition', window.innerHeight);">Scroll to Position</a></li>
                     <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
                     </li></ul>
                 
@@ -263,10 +263,25 @@ links.forEach(link => {
   });
 });
 
+</script>
 
+<script>
+  // Function to scroll to a specific position
+  function scrollToPosition(position) {
+    window.scrollTo({
+      top: position,
+      behavior: 'smooth'
+    });
+  }
 
+  // Check if the scroll position is stored in localStorage
+  var storedScrollPosition = localStorage.getItem('scrollPosition');
 
-
+  // Check if the stored scroll position is valid and scroll to it
+  if (storedScrollPosition) {
+    localStorage.removeItem('scrollPosition'); // Remove the stored scroll position
+    scrollToPosition(parseInt(storedScrollPosition)); // Convert the position to an integer and scroll to it
+  }
 </script>
 
 
@@ -565,7 +580,7 @@ links.forEach(link => {
     </div>
 </section>
 
-<div class="parent-element cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="1977">
+<div class="parent-element cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="3801">
 <section data-bs-version="5.1" class="timeline3" group="Timelines">
     
 
@@ -767,7 +782,7 @@ links.forEach(link => {
 <button id="show-less-btn" style="display:none;">Show Less</button>
 </div>
 
-</div><script class="cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="1977">
+</div><script class="cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="3801">
 const timelineSection = document.querySelector('.timeline3');
 const timelineElements = timelineSection.querySelectorAll('.timeline-element');
 const showMoreBtn = document.querySelector('#show-more-btn');
@@ -881,12 +896,12 @@ showLessBtn.addEventListener('click', () => {
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-9">
-                <div class="carousel slide" id="tEJ1CT2jV9" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
+                <div class="carousel slide" id="tEJb7X2EJT" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
                     
                     <ol class="carousel-indicators">
-                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEJ1CT2jV9" data-bs-target="#tEJ1CT2jV9"></li>
-                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#tEJ1CT2jV9" data-bs-target="#tEJ1CT2jV9"></li>
-                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#tEJ1CT2jV9" data-bs-target="#tEJ1CT2jV9"></li>
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEJb7X2EJT" data-bs-target="#tEJb7X2EJT"></li>
+                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#tEJb7X2EJT" data-bs-target="#tEJb7X2EJT"></li>
+                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#tEJb7X2EJT" data-bs-target="#tEJb7X2EJT"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item slider-image item active">
@@ -908,11 +923,11 @@ showLessBtn.addEventListener('click', () => {
                         </div>
                         
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEJ1CT2jV9">
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEJb7X2EJT">
                         <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Previous</span>
                     </a>
-                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEJ1CT2jV9">
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEJb7X2EJT">
                         <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Next</span>
                     </a>
