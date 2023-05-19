@@ -117,25 +117,7 @@
         }, 500);
       }
     </script>
-  <div class="container cid-tEljtdDrmS" id="header8-4d" data-rv-view="679">
-<div data-bs-version="5.1" class="header" group="Headers">
-    
-
-
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <h3 class="mbr-section-title mbr-white mbr-fonts-style display-1">
-                    <strong>Header</strong></h3>
-                <p class="mbr-text mbr-fonts-style mbr-white mb-4 display-1">Create your own website.<br><a href="#" class="text-danger"><strong>How to start a website &gt;&gt;</strong></a></p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<section data-bs-version="5.1" class="menu menu3 cid-tEljte1yuc" once="menu" id="menu3-4e">
+  <section data-bs-version="5.1" class="menu menu3 cid-tEGQdl3OaW" once="menu" id="menu3-4y">
 
     
 
@@ -291,8 +273,51 @@ links.forEach(link => {
 
 </section>
 
-<div class="features cid-tEljtewVtg" id="features16-4f" data-rv-view="684">
-<siv data-bs-version="5.1" class="features01" group="Features">
+<div class="container cid-tEGQdlKHR4" id="header8-4z" data-rv-view="975">
+<div data-bs-version="5.1" class="curtain" group="Headers">
+    
+
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="mbr-section-title mbr-white mbr-fonts-style display-1"><br><br>Hello, I am Hantus Chen</h3>
+                <p class="mbr-text mbr-fonts-style mbr-white mb-4 display-1"><br>I am an <span style="color: #FF8000;">product designer&nbsp;</span>and<br><span style="color: #FF8000;">industrial designer</span>,&nbsp;<br><br><br><br><br>I am drawn to the interaction between human and products,  and am keen to create a future of happiness.<br></p>
+            
+            
+            <div class="image-wrapper">
+        <img src="assets/images/arrow-512x512.png" alt="" media-simple="true">
+    </div>
+            
+            
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</div>
+</div><script class="cid-tEGQdlKHR4" id="header8-4z" data-rv-view="975">
+window.addEventListener('scroll', function() {
+  var curtain = document.querySelector('.curtain');
+  var features = document.querySelector('.features');
+  var container = document.querySelector('.container');
+
+  var curtainHeight = curtain.offsetHeight;
+  var containerHeight = container.offsetHeight;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  var curtainOffset = scrollTop / containerHeight * curtainHeight ;
+  curtain.style.transform = 'translateY(-' + curtainOffset + 'rem)';
+
+
+});
+</script>
+
+<div class="features-container cid-tEGQdmeSCN" id="features16-50" data-rv-view="978">
+<siv data-bs-version="5.1" class="features" group="Features">
 
     
 
@@ -322,7 +347,14 @@ links.forEach(link => {
             </div>
         </div>
     </div>
+</siv>
+</div>
+
+<div class="features-container cid-tEGQdmIwWc" id="features16-51" data-rv-view="981">
+<siv data-bs-version="5.1" class="features" group="Features">
+
     
+
     
     
     <div class="container">
@@ -349,7 +381,14 @@ links.forEach(link => {
             </div>
         </div>
     </div>
+</siv>
+</div>
+
+<div class="features-container cid-tEGQdneY69" id="features16-52" data-rv-view="984">
+<siv data-bs-version="5.1" class="features" group="Features">
+
     
+
     
     
     <div class="container">
@@ -376,23 +415,10 @@ links.forEach(link => {
             </div>
         </div>
     </div>
-</siv></div><script class="cid-tEljtewVtg" id="features16-4f" data-rv-view="684">
-document.addEventListener("scroll", function() {
-  var scrollPosition = window.pageYOffset;
-  var header = document.querySelector(".header");
-  var features = document.querySelector(".features");
+</siv>
+</div>
 
-  var headerHeight = header.offsetHeight;
-
-  if (scrollPosition >= headerHeight) {
-    features.style.overflow = "auto"; // Enable scrolling when curtain is gone
-  } else {
-    features.style.overflow = "hidden"; // Disable scrolling initially and while curtain is visible
-  }
-});
-</script>
-
-<section data-bs-version="5.1" class="footer7 cid-tEljtf2NPP" once="footers" id="footer7-4g">
+<section data-bs-version="5.1" class="footer7 cid-tEGQdnEg6c" once="footers" id="footer7-53">
 
     
 
