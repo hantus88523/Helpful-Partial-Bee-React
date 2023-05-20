@@ -146,7 +146,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="target-page.html">Go to Scroll Point</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/index.html" onclick="scrollToPosition(window.innerHeight); return false;">Scroll to Position</a></li>
                     <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
                     </li></ul>
                 
@@ -266,15 +266,24 @@ links.forEach(link => {
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var scrollAmount = window.innerHeight * 2; // Adjust the multiplier as needed
-
-    // Scroll to the calculated position
+  // Function to scroll to a specific position
+  function scrollToPosition(position) {
     window.scrollTo({
-      top: scrollAmount,
+      top: position,
       behavior: 'smooth'
     });
-  });
+  }
+
+  // Wait for the page to finish loading
+  window.onload = function() {
+    // Get the scroll amount
+    var scrollAmount = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Check if the scroll amount matches the desired position (100vh)
+    if (scrollAmount === 0) {
+      scrollToPosition(window.innerHeight); // Scroll to the desired position (100vh)
+    }
+  };
 </script>
 
 
@@ -502,10 +511,10 @@ links.forEach(link => {
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-9">
-                <div class="carousel slide" id="tEMdeWpt2s" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
+                <div class="carousel slide" id="tEMkVmFd3w" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
                     
                     <ol class="carousel-indicators">
-                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEMdeWpt2s" data-bs-target="#tEMdeWpt2s"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#tEMdeWpt2s" data-bs-target="#tEMdeWpt2s"></li>
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEMkVmFd3w" data-bs-target="#tEMkVmFd3w"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#tEMkVmFd3w" data-bs-target="#tEMkVmFd3w"></li>
                         
                         
                     </ol>
@@ -524,11 +533,11 @@ links.forEach(link => {
                         
                         
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEMdeWpt2s">
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEMkVmFd3w">
                         <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Previous</span>
                     </a>
-                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEMdeWpt2s">
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEMkVmFd3w">
                         <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Next</span>
                     </a>
