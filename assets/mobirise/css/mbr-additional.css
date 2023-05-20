@@ -1186,30 +1186,6 @@ a {
   bottom: -3rem;
   pointer-events: none;
 }
-.cid-tE3Optns7Y #curtain-over {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background-size: cover;
-  width: 100%;
-  min-height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  display: block;
-  float: left;
-  margin-bottom: -100vh;
-  z-index: 1;
-}
-.cid-tE3Optns7Y #curtain-under {
-  background-color: #FFFFFF;
-  position: relative;
-  float: left;
-  width: 100%;
-  display: block;
-  color: #ccc;
-  font-size: 1rem;
-}
 .cid-tE3Optns7Y .card-title {
   color: #000000;
 }
