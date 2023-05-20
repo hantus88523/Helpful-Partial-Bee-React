@@ -618,7 +618,6 @@
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
-            "overflow-x": "hidden",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
@@ -765,6 +764,9 @@
             },
             ".col-12ttl:hover": {
               "transform": "scale(1.04)"
+            },
+            ".features": {
+              "overflow-x": "hidden"
             }
           },
           "_name": "features16",

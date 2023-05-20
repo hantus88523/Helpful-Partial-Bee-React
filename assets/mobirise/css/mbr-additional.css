@@ -1091,7 +1091,6 @@ a {
 .cid-tENrL7WVAq {
   padding-top: 2rem;
   padding-bottom: 0rem;
-  overflow-x: hidden;
   background-color: #ffffff;
 }
 .cid-tENrL7WVAq .mbr-fallback-image.disabled {
@@ -1240,6 +1239,9 @@ a {
 }
 .cid-tENrL7WVAq .col-12ttl:hover {
   transform: scale(1.04);
+}
+.cid-tENrL7WVAq .features {
+  overflow-x: hidden;
 }
 .cid-tEHfBCNsR0 {
   padding-top: 0rem;
