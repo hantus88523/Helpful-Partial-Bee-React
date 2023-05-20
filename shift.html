@@ -118,174 +118,7 @@
         }, 500);
       }
     </script>
-  <section data-bs-version="5.1" class="menu menu3 cid-tEMwqjEH9B" once="menu" id="menu3-97">
-
-    
-
-    
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        
-
-        
-        <div class="container">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="index.html">
-                        <img src="assets/images/hc-design-96x96.webp" alt="" style="height: 3rem;">
-                    </a>
-                </span>
-                
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="#" onclick="scrollToPosition()">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
-                    </li></ul>
-                
-                
-            </div>
-        </div>
-       
-
-    </nav>
-    
-    <div class="circle"></div>
-    
-     
-    
-
-
-
-<script>
-// Get the element with class name .circle"
-var iconElement = document.querySelector('.circle');
-
-// Set the initial position of the tracking object
-var startX = 0;
-var startY = 0;
-
-// Set the target position of the tracking object
-var targetX = 0;
-var targetY = 0;
-
-// Set a flag to indicate if the tracking should start or not
-var shouldStartTracking = false;
-
-// Set a flag to indicate if the tracking is in progress or not
-var isTrackingInProgress = false;
-
-// Function to update the position of the tracking object smoothly
-function updatePosition() {
-    // Calculate the distance between the current position and the target position
-    var distanceX = (targetX - startX) * 0.05; // Update with a percentage of window width
-    var distanceY = (targetY - startY) * 0.05; // Update with a percentage of window height
-
-    // Update the current position with the calculated distance
-    startX += distanceX;
-    startY += distanceY;
-
-    // Set the position of the icon element
-    iconElement.style.left = startX + 'px';
-    iconElement.style.top = startY + 'px';
-
-    // Check if the tracking is complete
-    if (Math.abs(distanceX) < 0.1 && Math.abs(distanceY) < 0.1) {
-        isTrackingInProgress = false;
-    } else {
-        // Request the next frame for smooth animation
-        requestAnimationFrame(updatePosition);
-    }
-}
-
-// Add event listener for mousemove event
-document.addEventListener('mousemove', function(event) {
-    // Adjust for the scroll position of the page
-    var scrollX = window.scrollX || window.pageXOffset;
-    var scrollY = window.scrollY || window.pageYOffset;
-
-    // If the tracking should start and it's not already in progress, set the target position and start the tracking
-    if (shouldStartTracking && !isTrackingInProgress) {
-        iconElement.style.display = 'block';
-        targetX = event.clientX + scrollX;
-        targetY = event.clientY + scrollY;
-        startX = iconElement.offsetLeft;
-        startY = iconElement.offsetTop;
-        isTrackingInProgress = true;
-        updatePosition();
-    } else {
-        // Update the target position in real-time
-        targetX = event.clientX + scrollX;
-        targetY = event.clientY + scrollY;
-    }
-});
-
-// Delay the start of tracking by 2 seconds (2000 milliseconds)
-setTimeout(function() {
-    shouldStartTracking = true;
-}, 1500);
-
-//enlarge
-const circle = document.querySelector(".circle");
-
- circle.addEventListener("transitionend", function() {
- circle.classList.remove("enlarged");
-});
-
-
-document.addEventListener("click", function() {
-  circle.classList.add("enlarged");
-});
-
-
-//HOVER
-
-const links = document.querySelectorAll("a");
-
-
-
-circle.style.pointerEvents = "none"; // disable pointer events on the .circle element
-
-links.forEach(link => {
-  link.addEventListener("mouseenter", function() {
-    circle.classList.add("hover");
-  });
-
-  link.addEventListener("mouseleave", function() {
-    circle.classList.remove("hover");
-  });
-});
-
-</script>
-
-<script>
-  function scrollToPosition() {
-    const windowHeight = window.innerHeight;
-    const scrollTo = windowHeight * 1; // Set the desired vh value here
-
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    const targetScroll = scrollTo - currentScroll;
-
-    window.scrollBy({
-      top: targetScroll,
-      behavior: 'smooth'
-    });
-  }
-</script>
-
-
-    
-
-</section>
-
-<section data-bs-version="5.1" class="header9 cid-tEMwqeWMEW" id="header9-8j">
+  <section data-bs-version="5.1" class="header9 cid-tEMwqeWMEW" id="header9-8j">
 
     
 
@@ -585,10 +418,10 @@ links.forEach(link => {
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-9">
-                <div class="carousel slide" id="tEN677Dqxc" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
+                <div class="carousel slide" id="tENaIijwYF" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
                     
                     <ol class="carousel-indicators">
-                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEN677Dqxc" data-bs-target="#tEN677Dqxc"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#tEN677Dqxc" data-bs-target="#tEN677Dqxc"></li><li data-slide-to="2" data-bs-slide-to="2" class="" data-target="#tEN677Dqxc" data-bs-target="#tEN677Dqxc"></li>
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tENaIijwYF" data-bs-target="#tENaIijwYF"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#tENaIijwYF" data-bs-target="#tENaIijwYF"></li><li data-slide-to="2" data-bs-slide-to="2" class="" data-target="#tENaIijwYF" data-bs-target="#tENaIijwYF"></li>
                         
                         
                     </ol>
@@ -612,11 +445,11 @@ links.forEach(link => {
                         
                         
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEN677Dqxc">
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tENaIijwYF">
                         <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Previous</span>
                     </a>
-                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEN677Dqxc">
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tENaIijwYF">
                         <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Next</span>
                     </a>
@@ -740,6 +573,173 @@ links.forEach(link => {
             </div>
         </div>
     </div>
+</section>
+
+<section data-bs-version="5.1" class="menu menu3 cid-tEMwqjEH9B" once="menu" id="menu3-97">
+
+    
+
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        
+
+        
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/hc-design-96x96.webp" alt="" style="height: 3rem;">
+                    </a>
+                </span>
+                
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="#" onclick="scrollToPosition()">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+       
+
+    </nav>
+    
+    <div class="circle"></div>
+    
+     
+    
+
+
+
+<script>
+// Get the element with class name .circle"
+var iconElement = document.querySelector('.circle');
+
+// Set the initial position of the tracking object
+var startX = 0;
+var startY = 0;
+
+// Set the target position of the tracking object
+var targetX = 0;
+var targetY = 0;
+
+// Set a flag to indicate if the tracking should start or not
+var shouldStartTracking = false;
+
+// Set a flag to indicate if the tracking is in progress or not
+var isTrackingInProgress = false;
+
+// Function to update the position of the tracking object smoothly
+function updatePosition() {
+    // Calculate the distance between the current position and the target position
+    var distanceX = (targetX - startX) * 0.05; // Update with a percentage of window width
+    var distanceY = (targetY - startY) * 0.05; // Update with a percentage of window height
+
+    // Update the current position with the calculated distance
+    startX += distanceX;
+    startY += distanceY;
+
+    // Set the position of the icon element
+    iconElement.style.left = startX + 'px';
+    iconElement.style.top = startY + 'px';
+
+    // Check if the tracking is complete
+    if (Math.abs(distanceX) < 0.1 && Math.abs(distanceY) < 0.1) {
+        isTrackingInProgress = false;
+    } else {
+        // Request the next frame for smooth animation
+        requestAnimationFrame(updatePosition);
+    }
+}
+
+// Add event listener for mousemove event
+document.addEventListener('mousemove', function(event) {
+    // Adjust for the scroll position of the page
+    var scrollX = window.scrollX || window.pageXOffset;
+    var scrollY = window.scrollY || window.pageYOffset;
+
+    // If the tracking should start and it's not already in progress, set the target position and start the tracking
+    if (shouldStartTracking && !isTrackingInProgress) {
+        iconElement.style.display = 'block';
+        targetX = event.clientX + scrollX;
+        targetY = event.clientY + scrollY;
+        startX = iconElement.offsetLeft;
+        startY = iconElement.offsetTop;
+        isTrackingInProgress = true;
+        updatePosition();
+    } else {
+        // Update the target position in real-time
+        targetX = event.clientX + scrollX;
+        targetY = event.clientY + scrollY;
+    }
+});
+
+// Delay the start of tracking by 2 seconds (2000 milliseconds)
+setTimeout(function() {
+    shouldStartTracking = true;
+}, 1500);
+
+//enlarge
+const circle = document.querySelector(".circle");
+
+ circle.addEventListener("transitionend", function() {
+ circle.classList.remove("enlarged");
+});
+
+
+document.addEventListener("click", function() {
+  circle.classList.add("enlarged");
+});
+
+
+//HOVER
+
+const links = document.querySelectorAll("a");
+
+
+
+circle.style.pointerEvents = "none"; // disable pointer events on the .circle element
+
+links.forEach(link => {
+  link.addEventListener("mouseenter", function() {
+    circle.classList.add("hover");
+  });
+
+  link.addEventListener("mouseleave", function() {
+    circle.classList.remove("hover");
+  });
+});
+
+</script>
+
+<script>
+  function scrollToPosition() {
+    const windowHeight = window.innerHeight;
+    const scrollTo = windowHeight * 1; // Set the desired vh value here
+
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const targetScroll = scrollTo - currentScroll;
+
+    window.scrollBy({
+      top: targetScroll,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
+    
+
 </section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/witsec-jquery-3.5.1/jquery-3.5.1.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
