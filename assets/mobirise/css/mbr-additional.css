@@ -1088,15 +1088,16 @@ a {
 .cid-tEMnI0117J .circle.hover {
   transform: scale(1.5);
 }
-.cid-tE3Optns7Y {
+.cid-tENrL7WVAq {
   padding-top: 2rem;
   padding-bottom: 0rem;
+  overflow-x: hidden;
   background-color: #ffffff;
 }
-.cid-tE3Optns7Y .mbr-fallback-image.disabled {
+.cid-tENrL7WVAq .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-tE3Optns7Y .mbr-fallback-image {
+.cid-tENrL7WVAq .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -1105,79 +1106,79 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-tE3Optns7Y .content-wrapper {
+.cid-tENrL7WVAq .content-wrapper {
   background: #ffffff;
   margin-bottom: 2rem;
 }
 @media (max-width: 991px) {
-  .cid-tE3Optns7Y .content-wrapper .row {
+  .cid-tENrL7WVAq .content-wrapper .row {
     flex-direction: column-reverse;
   }
-  .cid-tE3Optns7Y .content-wrapper .image-wrapper {
+  .cid-tENrL7WVAq .content-wrapper .image-wrapper {
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 767px) {
-  .cid-tE3Optns7Y .content-wrapper {
+  .cid-tENrL7WVAq .content-wrapper {
     padding: 1rem;
     margin-bottom: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .cid-tE3Optns7Y .content-wrapper {
+  .cid-tENrL7WVAq .content-wrapper {
     padding: 2rem;
   }
 }
 @media (min-width: 992px) {
-  .cid-tE3Optns7Y .content-wrapper {
+  .cid-tENrL7WVAq .content-wrapper {
     padding: 0rem 3rem;
   }
-  .cid-tE3Optns7Y .content-wrapper .text-wrapper {
+  .cid-tENrL7WVAq .content-wrapper .text-wrapper {
     padding-right: 2rem;
   }
 }
-.cid-tE3Optns7Y .image-wrapper img {
+.cid-tENrL7WVAq .image-wrapper img {
   width: 100%;
   object-fit: cover;
 }
-.cid-tE3Optns7Y .mbr-text,
-.cid-tE3Optns7Y .mbr-section-btn {
+.cid-tENrL7WVAq .mbr-text,
+.cid-tENrL7WVAq .mbr-section-btn {
   text-align: left;
   color: #747474;
 }
-.cid-tE3Optns7Y .btn {
+.cid-tENrL7WVAq .btn {
   border-radius: 999px;
   border: 2px solid black;
 }
-.cid-tE3Optns7Y .image-wrapper {
+.cid-tENrL7WVAq .image-wrapper {
   border-radius: 2rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-height: 35rem;
 }
-.cid-tE3Optns7Y .image-wrapper:hover {
+.cid-tENrL7WVAq .image-wrapper:hover {
   transform: translate(0, -5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.cid-tE3Optns7Y img {
+.cid-tENrL7WVAq img {
   border-radius: 2rem;
 }
 @media (max-width: 767px) {
-  .cid-tE3Optns7Y img {
+  .cid-tENrL7WVAq img {
     border-radius: 1rem;
   }
 }
-.cid-tE3Optns7Y .swing-pic {
+.cid-tENrL7WVAq .swing-pic {
   filter: brightness(98%);
 }
-.cid-tE3Optns7Y .text-wrapper {
+.cid-tENrL7WVAq .text-wrapper {
   position: relative;
   transition: transform 0.3s ease;
 }
-.cid-tE3Optns7Y .text-wrapper:hover {
+.cid-tENrL7WVAq .text-wrapper:hover {
   transform: scale(1.02);
 }
-.cid-tE3Optns7Y .text-wrapper::before {
+.cid-tENrL7WVAq .text-wrapper::before {
   content: '';
   position: absolute;
   top: -3rem;
@@ -1186,14 +1187,38 @@ a {
   bottom: -3rem;
   pointer-events: none;
 }
-.cid-tE3Optns7Y .card-title {
+.cid-tENrL7WVAq #curtain-over {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  float: left;
+  margin-bottom: -100vh;
+  z-index: 1;
+}
+.cid-tENrL7WVAq #curtain-under {
+  background-color: #FFFFFF;
+  position: relative;
+  float: left;
+  width: 100%;
+  display: block;
+  color: #ccc;
+  font-size: 1rem;
+}
+.cid-tENrL7WVAq .card-title {
   color: #000000;
 }
-.cid-tE3Optns7Y H3 {
+.cid-tENrL7WVAq H3 {
   color: #666666;
   text-align: left;
 }
-.cid-tE3Optns7Y .image-wrapper-arrow {
+.cid-tENrL7WVAq .image-wrapper-arrow {
   margin: auto;
   width: 70px;
   opacity: 0.5;
@@ -1210,10 +1235,10 @@ a {
     opacity: 0.5;
   }
 }
-.cid-tE3Optns7Y .col-12ttl {
+.cid-tENrL7WVAq .col-12ttl {
   transition: transform 0.3s ease;
 }
-.cid-tE3Optns7Y .col-12ttl:hover {
+.cid-tENrL7WVAq .col-12ttl:hover {
   transform: scale(1.04);
 }
 .cid-tEHfBCNsR0 {
