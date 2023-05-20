@@ -118,7 +118,7 @@
         }, 500);
       }
     </script>
-  <section data-bs-version="5.1" class="menu menu3 cid-tEIrNU0JvB" once="menu" id="menu3-5b">
+  <section data-bs-version="5.1" class="menu menu3 cid-tEMnI0117J" once="menu" id="menu3-72">
 
     
 
@@ -146,7 +146,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/index.html" onclick="scrollToPosition(window.innerHeight); return false;">Scroll to Position</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="#" onclick="scrollToPosition()">Projects</a></li>
                     <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
                     </li></ul>
                 
@@ -266,24 +266,18 @@ links.forEach(link => {
 </script>
 
 <script>
-  // Function to scroll to a specific position
-  function scrollToPosition(position) {
-    window.scrollTo({
-      top: position,
+  function scrollToPosition() {
+    const windowHeight = window.innerHeight;
+    const scrollTo = windowHeight * 1; // Set the desired vh value here
+
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const targetScroll = scrollTo - currentScroll;
+
+    window.scrollBy({
+      top: targetScroll,
       behavior: 'smooth'
     });
   }
-
-  // Wait for the page to finish loading
-  window.onload = function() {
-    // Get the scroll amount
-    var scrollAmount = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Check if the scroll amount matches the desired position (100vh)
-    if (scrollAmount === 0) {
-      scrollToPosition(window.innerHeight); // Scroll to the desired position (100vh)
-    }
-  };
 </script>
 
 
@@ -511,10 +505,10 @@ links.forEach(link => {
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-9">
-                <div class="carousel slide" id="tEMkVmFd3w" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
+                <div class="carousel slide" id="tEMnLkqV2a" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
                     
                     <ol class="carousel-indicators">
-                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEMkVmFd3w" data-bs-target="#tEMkVmFd3w"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#tEMkVmFd3w" data-bs-target="#tEMkVmFd3w"></li>
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEMnLkqV2a" data-bs-target="#tEMnLkqV2a"></li><li data-slide-to="1" data-bs-slide-to="1" class="" data-target="#tEMnLkqV2a" data-bs-target="#tEMnLkqV2a"></li>
                         
                         
                     </ol>
@@ -533,11 +527,11 @@ links.forEach(link => {
                         
                         
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEMkVmFd3w">
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEMnLkqV2a">
                         <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Previous</span>
                     </a>
-                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEMkVmFd3w">
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEMnLkqV2a">
                         <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Next</span>
                     </a>

@@ -118,7 +118,7 @@
         }, 500);
       }
     </script>
-  <section data-bs-version="5.1" class="menu menu3 cid-tEJ9CuvtlY" once="menu" id="menu3-70">
+  <section data-bs-version="5.1" class="menu menu3 cid-tEMnI0117J" once="menu" id="menu3-72">
 
     
 
@@ -146,7 +146,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/index.html" onclick="scrollToPosition(window.innerHeight); return false;">Scroll to Position</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="#" onclick="scrollToPosition()">Projects</a></li>
                     <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
                     </li></ul>
                 
@@ -266,24 +266,18 @@ links.forEach(link => {
 </script>
 
 <script>
-  // Function to scroll to a specific position
-  function scrollToPosition(position) {
-    window.scrollTo({
-      top: position,
+  function scrollToPosition() {
+    const windowHeight = window.innerHeight;
+    const scrollTo = windowHeight * 1; // Set the desired vh value here
+
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const targetScroll = scrollTo - currentScroll;
+
+    window.scrollBy({
+      top: targetScroll,
       behavior: 'smooth'
     });
   }
-
-  // Wait for the page to finish loading
-  window.onload = function() {
-    // Get the scroll amount
-    var scrollAmount = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Check if the scroll amount matches the desired position (100vh)
-    if (scrollAmount === 0) {
-      scrollToPosition(window.innerHeight); // Scroll to the desired position (100vh)
-    }
-  };
 </script>
 
 
@@ -302,7 +296,7 @@ links.forEach(link => {
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-9">
                 <div class="image-wrap mb-4">
-                    <img src="assets/images/comp-1-2.gif" alt="Mobirise Website Builder" loading="lazy">
+                    <img src="assets/images/comp-1-2.gif" alt="Mobirise Website Builder">
                 </div>
                 <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1">Eatin.</h1>
                 
@@ -582,7 +576,7 @@ links.forEach(link => {
     </div>
 </section>
 
-<div class="parent-element cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="349">
+<div class="parent-element cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="85">
 <section data-bs-version="5.1" class="timeline3" group="Timelines">
     
 
@@ -784,7 +778,7 @@ links.forEach(link => {
 <button id="show-less-btn" style="display:none;">Show Less</button>
 </div>
 
-</div><script class="cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="349">
+</div><script class="cid-tDFrYjDsSn" id="Prototype-WEBPs" data-rv-view="85">
 const timelineSection = document.querySelector('.timeline3');
 const timelineElements = timelineSection.querySelectorAll('.timeline-element');
 const showMoreBtn = document.querySelector('#show-more-btn');
@@ -898,12 +892,12 @@ showLessBtn.addEventListener('click', () => {
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-9">
-                <div class="carousel slide" id="tEMkUU8DIm" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
+                <div class="carousel slide" id="tEMnKSSgfO" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
                     
                     <ol class="carousel-indicators">
-                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEMkUU8DIm" data-bs-target="#tEMkUU8DIm"></li>
-                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#tEMkUU8DIm" data-bs-target="#tEMkUU8DIm"></li>
-                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#tEMkUU8DIm" data-bs-target="#tEMkUU8DIm"></li>
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#tEMnKSSgfO" data-bs-target="#tEMnKSSgfO"></li>
+                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#tEMnKSSgfO" data-bs-target="#tEMnKSSgfO"></li>
+                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#tEMnKSSgfO" data-bs-target="#tEMnKSSgfO"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item slider-image item active">
@@ -925,11 +919,11 @@ showLessBtn.addEventListener('click', () => {
                         </div>
                         
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEMkUU8DIm">
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#tEMnKSSgfO">
                         <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Previous</span>
                     </a>
-                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEMkUU8DIm">
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#tEMnKSSgfO">
                         <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                         <span class="sr-only visually-hidden">Next</span>
                     </a>

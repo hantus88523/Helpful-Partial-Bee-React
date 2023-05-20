@@ -117,7 +117,7 @@
         }, 500);
       }
     </script>
-  <section data-bs-version="5.1" class="menu menu3 cid-tDV35ugxC0" once="menu" id="menu3-3f">
+  <section data-bs-version="5.1" class="menu menu3 cid-tEMnI0117J" once="menu" id="menu3-72">
 
     
 
@@ -145,7 +145,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/index.html" onclick="scrollToPosition(window.innerHeight); return false;">Scroll to Position</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="#" onclick="scrollToPosition()">Projects</a></li>
                     <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
                     </li></ul>
                 
@@ -265,24 +265,18 @@ links.forEach(link => {
 </script>
 
 <script>
-  // Function to scroll to a specific position
-  function scrollToPosition(position) {
-    window.scrollTo({
-      top: position,
+  function scrollToPosition() {
+    const windowHeight = window.innerHeight;
+    const scrollTo = windowHeight * 1; // Set the desired vh value here
+
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const targetScroll = scrollTo - currentScroll;
+
+    window.scrollBy({
+      top: targetScroll,
       behavior: 'smooth'
     });
   }
-
-  // Wait for the page to finish loading
-  window.onload = function() {
-    // Get the scroll amount
-    var scrollAmount = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Check if the scroll amount matches the desired position (100vh)
-    if (scrollAmount === 0) {
-      scrollToPosition(window.innerHeight); // Scroll to the desired position (100vh)
-    }
-  };
 </script>
 
 
@@ -290,7 +284,7 @@ links.forEach(link => {
 
 </section>
 
-<div id="Top" class="cid-tE3Optns7Y" data-rv-view="299">
+<div id="Top" class="cid-tE3Optns7Y" data-rv-view="37">
     <div id="curtain-over">
         
     <div class="container">
@@ -409,7 +403,7 @@ links.forEach(link => {
     
 </div>
 </div>
-</div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" class="cid-tE3Optns7Y" id="Top" data-rv-view="299"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js" class="cid-tE3Optns7Y" id="Top" data-rv-view="299"></script><script class="cid-tE3Optns7Y" id="Top" data-rv-view="299">
+</div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" class="cid-tE3Optns7Y" id="Top" data-rv-view="37"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js" class="cid-tE3Optns7Y" id="Top" data-rv-view="37"></script><script class="cid-tE3Optns7Y" id="Top" data-rv-view="37">
 var controller = new ScrollMagic.Controller();
 
 $(function() {
@@ -426,7 +420,7 @@ $(function() {
 });
 </script>
 
-<div class="features-container cid-tEHfBCNsR0" id="features16-57" data-rv-view="302">
+<div class="features-container cid-tEHfBCNsR0" id="features16-57" data-rv-view="40">
 <siv data-bs-version="5.1" class="features" group="Features">
 
     
