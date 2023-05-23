@@ -13897,6 +13897,11 @@
               }
             },
             ".image-wrapper img": {
+              "@media (max-width: 767px)": {
+                "margin-left": "0rem",
+                "height": "12rem",
+                "width": "12rem"
+              },
               "width": "100%",
               "object-fit": "cover"
             },

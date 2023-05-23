@@ -10601,6 +10601,13 @@ a {
   width: 100%;
   object-fit: cover;
 }
+@media (max-width: 767px) {
+  .cid-tF0QI2UPne .image-wrapper img {
+    margin-left: 0rem;
+    height: 12rem;
+    width: 12rem;
+  }
+}
 .cid-tF0QI2UPne img {
   border-radius: 1rem;
 }
