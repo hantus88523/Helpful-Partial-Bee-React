@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "My Site",
-    "currentPage": "index.html",
+    "currentPage": "projects.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -858,7 +858,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12rem"
               }
             },
             ".swing-pic": {
@@ -1024,7 +1024,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12rem"
               }
             },
             ".swing-pic": {
@@ -1190,7 +1190,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12em"
               }
             },
             ".swing-pic": {
@@ -1356,7 +1356,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12rem"
               }
             },
             ".swing-pic": {
@@ -14593,7 +14593,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12rem"
               }
             },
             ".swing-pic": {
@@ -14928,7 +14928,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12rem"
               }
             },
             ".swing-pic": {
@@ -15094,7 +15094,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12rem"
               }
             },
             ".swing-pic": {
@@ -15260,7 +15260,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12rem"
               }
             },
             ".swing-pic": {
@@ -15426,7 +15426,7 @@
               "height": "28rem",
               "@media (max-width: 767px)": {
                 "border-radius": "1rem",
-                "height": "13rem"
+                "height": "12rem"
               }
             },
             ".swing-pic": {
