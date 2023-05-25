@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "My Site",
-    "currentPage": "night-owl.html",
+    "currentPage": "projects.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -117,12 +117,12 @@
         "file": "@PROJECT_PATH@/fonts/Poppins-Thin/font.ttf"
       }
     ],
-    "uniqCompNum": 606,
+    "uniqCompNum": 607,
     "versionPublish": "5.8.4",
     "imageResize": true,
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "sshrlion6i",
+    "mbrsiteDomain": "yibam6bkyt",
     "usedWebp": true,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -771,7 +771,7 @@
           },
           "_name": "features16",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<div id=\"curtains\">\n    <div id=\"curtain-over\">\n        \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12ttl\">\n                <h3 class=\"mbr-section-title mbr-white mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><br><br>Hello, I am Hantus Chen</h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br>I am an <span style=\"color: #FF8000;\">product designer&nbsp;</span>and<br><span style=\"color: #FF8000;\">industrial designer</span>,&nbsp;<br><br><br><br><br>I craft delightful experiences with a focus on user-centric design within the interaction of people and products.<br></p>\n            </div>\n            \n            \n            \n            <div class=\"image-wrapper-arrow\">\n                <img class=\"arrow\" src=\"@PROJECT_PATH@/assets/images/arrow-512x512.png\" alt>\n            </div>\n            \n            \n        </div>\n    </div>\n        \n        \n    </div>\n    \n    \n    <div id=\"curtain-under\">\n\n\n<div data-bs-version=\"5.1\" class=\"features\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"20\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"8\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#ffffff\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Eatin.</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>EATin is a unique service that combines the convenience of food delivery with the comfort of a taxi ride.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"eatin.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/comp%201-2-1280x720.jpg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Swing</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>Swing is a chair designed to help people relax and be more creative with an intuitive and familiar activty from our childhood.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"swing.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img class=\"swing-pic\" src=\"@PROJECT_PATH@/assets/images/swing%20in%208-1360x740.jpg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>SHiFT</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>This bicycle system solves the problem that people buy spin bikes but never use them by combining an e-bike and a trainer.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"shift.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/shift%20hero-1916x1088.jpg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n</div>\n</div>\n</div>  \n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js\"></script>\n\n<script>\nvar controller = new ScrollMagic.Controller();\n\n$(function() {\n\tvar scene = new ScrollMagic.Scene({\n\t\ttriggerElement: \"#curtain-over\",\n\t\ttriggerHook: \"0.1\",\n\t\tduration: \"120%\"\n\t})\n\n\t.setPin(\"#curtain-under\")\n\t.addIndicators({ name: \"1\" }) \n\t.addTo(controller);\n\t\n});\n</script>",
+          "_customHTML": "<div id=\"curtains\">\n    <div id=\"curtain-over\">\n        \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12ttl\">\n                <h3 class=\"mbr-section-title mbr-white mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><br><br>Hello, I am Hantus Chen</h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br>I am an <span style=\"color: #FF8000;\">product designer&nbsp;</span>and<br><span style=\"color: #FF8000;\">industrial designer</span>,&nbsp;<br><br><br><br><br>I craft delightful experiences with a focus on user-centric design within the interaction of people and products.<br></p>\n            </div>\n            \n            \n            \n            <div class=\"image-wrapper-arrow\">\n                <img class=\"arrow\" src=\"@PROJECT_PATH@/assets/images/arrow-512x512.png\" alt>\n            </div>\n            \n            \n        </div>\n    </div>\n        \n        \n    </div>\n    \n    \n    <div id=\"curtain-under\">\n\n\n<div data-bs-version=\"5.1\" class=\"features\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"20\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"8\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#ffffff\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Eatin.</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>EATin is a unique service that combines the convenience of food delivery with the comfort of a taxi ride.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"eatin.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/comp%201-2-1280x720.jpeg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Swing</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>Swing is a chair designed to help people relax and be more creative with an intuitive and familiar activty from our childhood.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"swing.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img class=\"swing-pic\" src=\"@PROJECT_PATH@/assets/images/swing%20in%208-1360x740.jpg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>SHiFT</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>This bicycle system solves the problem that people buy spin bikes but never use them by combining an e-bike and a trainer.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"shift.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/shift%20hero-1916x1088.jpg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n</div>\n</div>\n</div>  \n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js\"></script>\n\n<script>\nvar controller = new ScrollMagic.Controller();\n\n$(function() {\n\tvar scene = new ScrollMagic.Scene({\n\t\ttriggerElement: \"#curtain-over\",\n\t\ttriggerHook: \"0.1\",\n\t\tduration: \"120%\"\n\t})\n\n\t.setPin(\"#curtain-under\")\n\t.addIndicators({ name: \"1\" }) \n\t.addTo(controller);\n\t\n});\n</script>",
           "_anchor": "features16-9w",
           "_isUserblock": true,
           "_cid": "tENrL7WVAq",
@@ -14516,6 +14516,173 @@
         "order": "1"
       },
       "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrapper": {
+              "background": "@cardColor",
+              "margin-bottom": "2rem",
+              "@media (max-width: 991px)": {
+                ".row": {
+                  "flex-direction": "column-reverse"
+                },
+                ".image-wrapper": {
+                  "margin-bottom": "2rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "padding": "1rem",
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "0rem 3rem",
+                ".text-wrapper": {
+                  "padding-right": "2rem"
+                }
+              }
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "object-fit": "cover"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left",
+              "color": "#747474"
+            },
+            ".btn": {
+              "border-radius": "999px",
+              "border": "2px solid black"
+            },
+            ".image-wrapper": {
+              "border-radius": "2rem",
+              "box-shadow": "0 0 5px rgba(0, 0, 0, 0)",
+              "transition": "transform 0.3s ease, box-shadow 0.3s ease"
+            },
+            ".image-wrapper:hover": {
+              "transform": "translate(0, -5px)",
+              "box-shadow": "0 5px 10px rgba(0, 0, 0, 0.2)"
+            },
+            "img": {
+              "border-radius": "2rem",
+              "height": "28rem",
+              "@media (max-width: 767px)": {
+                "border-radius": "1rem",
+                "height": "13rem"
+              }
+            },
+            ".swing-pic": {
+              "filter": "brightness(98%)"
+            },
+            ".text-wrapper": {
+              "position": "relative",
+              "transition": "transform 0.3s ease"
+            },
+            ".text-wrapper:hover": {
+              "transform": "scale(1.02)"
+            },
+            ".text-wrapper::before": {
+              "content": "''",
+              "position": "absolute",
+              "top": "-3rem",
+              "left": "-3rem",
+              "right": "-3rem",
+              "bottom": "-3rem",
+              "pointer-events": "none"
+            },
+            "#curtain-over": {
+              "background-color": "rgba(255, 255, 255, 0.85)",
+              "backdrop-filter": "blur(10px)",
+              "-webkit-backdrop-filter": "blur(10px)",
+              "background-size": "cover",
+              "width": "100%",
+              "min-height": "100vh",
+              "background-position": "center",
+              "background-repeat": "no-repeat",
+              "position": "relative",
+              "display": "block",
+              "float": "left",
+              "margin-bottom": "-100vh",
+              "z-index": "1"
+            },
+            "#curtain-under": {
+              "background-color": "#FFFFFF",
+              "position": "relative",
+              "float": "left",
+              "width": "100%",
+              "display": "block",
+              "color": "#ccc",
+              "font-size": "1rem"
+            },
+            ".card-title": {
+              "color": "#000000"
+            },
+            "H3": {
+              "color": "#666666",
+              "text-align": "left"
+            },
+            ".arrow": {
+              "margin": "auto",
+              "margin-top": "1rem",
+              "width": "50px",
+              "height": "50px",
+              "opacity": "0.5",
+              "animation": "flash 1s infinite"
+            },
+            "@keyframes flash": {
+              "0%": {
+                "opacity": "0.5"
+              },
+              "50%": {
+                "opacity": "0"
+              },
+              "100%": {
+                "opacity": "0.5"
+              }
+            },
+            ".col-12ttl": {
+              "transition": "transform 0.3s ease"
+            },
+            ".col-12ttl:hover": {
+              "transform": "scale(1.04)"
+            }
+          },
+          "_name": "features16",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "\n\n<div data-bs-version=\"5.1\" class=\"features\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"20\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"8\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked=\"\">\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#ffffff\" selected=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Eatin.</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>EATin is a unique service that combines the convenience of food delivery with the comfort of a taxi ride.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"eatin.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/comp%201-2-1280x720.jpeg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Swing</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>Swing is a chair designed to help people relax and be more creative with an intuitive and familiar activty from our childhood.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"swing.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img class=\"swing-pic\" src=\"@PROJECT_PATH@/assets/images/swing%20in%208-1360x740.jpg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>SHiFT</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            <br>This bicycle system solves the problem that people buy spin bikes but never use them by combining an e-bike and a trainer.&nbsp;</p>\n                        \n                    </div>\n                    \n                    <div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-black-outline\" href=\"shift.html\" data-app-placeholder=\"Type Text\">Learn more</a></div>\n                    \n                    \n                </div>\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <img src=\"@PROJECT_PATH@/assets/images/shift%20hero-1916x1088.jpg\" alt=\"Mobirise Website Builder\" loading=\"lazy\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    \n    \n    \n</div>\n \n\n",
+          "_anchor": "features16-gu",
+          "_isUserblock": true,
+          "_cid": "tFfCoMsVVk",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
         {
           "alias": false,
           "_styles": {
