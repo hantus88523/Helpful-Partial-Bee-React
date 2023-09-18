@@ -209,3 +209,24 @@ dropdownButton.addEventListener("click", function () {
     dropdownContent.style.display = "block";
   }
 });
+
+/**
+ * Preload banner images for slideshow
+ */
+
+var imagePaths = [
+  "../assets/image/Banners/banner1.webp",
+  "../assets/image/Banners/banner2.webp",
+  "../assets/image/Banners/banner3.webp",
+  "../assets/image/Banners/banner4.webp",
+  "../assets/image/Banners/banner5.webp",
+];
+
+function preloadImages() {
+  for (var i = 0; i < imagePaths.length; i++) {
+    var img = new Image();
+    img.src = imagePaths[i];
+  }
+}
+
+preloadImages();
