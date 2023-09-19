@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
    */
   function typeStyle() {
     var foo = jQuery("#typer");
-    foo.typer(["a happy", " a product", "a UX "]);
+    foo.typer(["a Versatile ", " a Product", "a UX "]);
   }
 
   // Call the typeStyle function
