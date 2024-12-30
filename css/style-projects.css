@@ -1,10 +1,10 @@
 body {
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.8;
-  font-weight: normal;
+  font-weight: 300;
   background: #ffffff;
-  color: gray;
+  color: grey;
 }
 
 body.slideout {
@@ -68,18 +68,26 @@ h3,
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 350;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #000;
+  opacity: 0.7;
+}
+h5 {
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   font-family: "Poppins", Arial, sans-serif;
-  color: #000;
+  color: grey;
+  opacity: 0.5;
 }
-h5 {
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 300;
-  font-family: "Poppins", Arial, sans-serif;
-  color: #000;
+
+.text-black-400{
+color: black; 
+font-weight: 400;
+font-size: 16px;
 }
 
 .bg-primary {
@@ -990,7 +998,7 @@ h5 {
 
 .selected-link {
   color: #222425;
-  font-weight: 600;
+  font-weight: 400;
   border-bottom: 1px solid rgb(0, 0, 0); /* Change to your desired highlight color */
 }
 
