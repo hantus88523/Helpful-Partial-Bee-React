@@ -153,9 +153,8 @@ html:lang(jp) .text-black-400 {
 
 #colorlib-page {
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
-  height: 100vh;
 }
 
 #colorlib-aside {
