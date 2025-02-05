@@ -1106,8 +1106,7 @@ Start of banner section [*3]
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  animation: backgroundSlideshow 18s infinite;
-  animation-delay: 5s;
+  animation: backgroundSlideshow 15s infinite;
 }
 
 @keyframes backgroundSlideshow {
