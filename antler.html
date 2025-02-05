@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Antler — hc-design.</title>
+    <title>Antler</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -13,7 +13,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style-projects.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Favicons -->
     <link href="assets/favicon/favicon-32x32.png" rel="icon" />
     <link href="assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -35,104 +35,147 @@
       rel="stylesheet"
     />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <!-- Template Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <!-- =======================================================
-	  * Template Name: PhotoFolio
-	  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-	  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-	  * Author: BootstrapMade.com
-	  * License: https://bootstrapmade.com/license/
-	  ======================================================== -->
     <!-- Google Model Viewer -->
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
     ></script>
   </head>
-  <style>
-    .logo {
-      margin-bottom: 4rem;
-      margin-left: -18px;
-      max-width: 10rem;
-    }
-    .logo-container {
-      max-width: 120%;
-    }
-  </style>
-  <body>
+
+  <body class="antler-page">
     <div id="colorlib-page">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-      <aside id="colorlib-aside" role="complementary" class="js-fullheight">
-        <div class="container" id="logo-container">
-          <a href="index.html">
-            <img src="assets/logo/hc-design.png" class="logo" />
-          </a>
+      <!-- START LANGUAGE -->
+      <div class="language-switcher-container">
+        <div class="language-switcher">
+          <a class="language-switcher-active" href="antler.html">EN</a>
+          <a class="language-switcher-not-active" href="antler_jp.html">JP</a>
         </div>
-        <nav id="colorlib-main-menu" role="navigation" style="height: 100vh;">
+      </div>
+
+      <a class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+      <aside id="colorlib-aside" role="complementary" class="js-fullheight">
+        <nav id="colorlib-main-menu" role="navigation" style="height: 100vh">
+          <div class="logo-box">
+            <a href="index.html">
+              <img src="assets/logo/HCD.png" class="logo" alt="image" />
+            </a>
+          </div>
           <ul>
-            <li class="colorlib-active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="dropdown-button"><a>Projects</a></li>
             <li class="dropdown-content">
-              <ul style="padding-left: 20px">
-                <hr />
-                <li style="font-size: 13px; color: rgb(182, 182, 182)">
-                  UX + Product Design
+              <ul style="margin-bottom: 10px">
+                <hr class="project-list-line" />
+                <li
+                  style="
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgb(182, 182, 182);
+                  "
+                >
+                  Full experience
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="eatin.html">Eatin.</a>
+                <li>
+                  <a class="project-list" href="DiaFitty.html">DiaFitty</a>
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="lock-in.html">LOCK-iN</a>
+                <li>
+                  <a class="project-list" href="eatin.html">Eatin.</a>
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="bulliaid.html">BULLiAID</a>
+                <li>
+                  <a class="project-list" href="lock-in.html">LOCK-iN</a>
+                </li>
+                <li>
+                  <a class="project-list" href="bulliaid.html">BULLiAID</a>
                 </li>
               </ul>
-              <ul style="padding-left: 20px">
-                <li style="font-size: 13px; color: rgb(182, 182, 182)">
-                  UX Design
+              <ul style="margin-bottom: 10px">
+                <li
+                  style="
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgb(182, 182, 182);
+                  "
+                >
+                  Digital experience
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="gemz.html">GEMZ</a>
+                <li>
+                  <a class="project-list" href="gemz.html">GEMZ</a>
                 </li>
               </ul>
-              <ul style="padding-left: 20px">
-                <li style="font-size: 13px; color: rgb(182, 182, 182)">
-                  Product Design
+              <ul style="margin-bottom: 10px">
+                <li
+                  style="
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgb(182, 182, 182);
+                  "
+                >
+                  Tangible experience
+                </li>
+                <li>
+                  <a class="project-list" href="swing.html">Swing</a>
+                </li>
+                <li>
+                  <a class="project-list" href="shift.html">SHiFT</a>
+                </li>
+                <li>
+                  <a class="project-list" href="visionfuse.html">VisionFUSE</a>
                 </li>
                 <li style="font-size: 14px; color: black">
-                  <a href="swing.html">Swing</a>
+                  <a class="project-list" href="livingbubbles.html"
+                    >Living Bubbles</a
+                  >
                 </li>
                 <li style="font-size: 14px; color: black">
-                  <a href="shift.html">SHiFT</a>
+                  <a class="project-list" href="night-owl.html">Night-ØwL</a>
                 </li>
                 <li style="font-size: 14px; color: black">
-                  <a href="livingbubbles.html">Living Bubbles</a>
+                  <a class="project-list" href="antler.html">Antler</a>
                 </li>
                 <li style="font-size: 14px; color: black">
-                  <a href="night-owl.html">Night-ØwL</a>
+                  <a class="project-list" href="mrcbg.html">MRCBG</a>
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="antler.html">Antler</a>
-                </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="mrcbg.html">MRCBG</a>
-                </li>
-                <hr />
+                <hr class="project-list-line" />
               </ul>
             </li>
             <li><a href="about.html">About</a></li>
           </ul>
-          <div class="social-media-links" style="display: flex; gap: 15px; margin-top:25px;">
-            <a href="https://www.linkedin.com/in/hantuschen/" target="_blank" style="font-size: 20px;">
-              <img src="assets/icons/LinkedIn.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+          <div
+            class="social-media-links"
+            style="display: flex; gap: 15px; margin-top: 25px"
+          >
+            <a
+              href="https://www.linkedin.com/in/hantuschen/"
+              target="_blank"
+              style="font-size: 20px"
+            >
+              <img
+                src="assets/icons/LinkedIn.png"
+                style="width: 20px; height: 20px"
+                alt="image"
+              />
             </a>
-            <a href="mailto:hantuschendesign@gmail.com" target="_blank" style="font-size: 20px;">
-              <img src="assets/icons/Email.png" alt="Email" style="width: 20px; height: 20px;">
+            <a
+              href="mailto:hantuschendesign@gmail.com"
+              target="_blank"
+              style="font-size: 20px"
+            >
+              <img
+                src="assets/icons/Email.png"
+                style="width: 20px; height: 20px"
+                alt="image"
+              />
             </a>
-            <a href="tel:+886-912710271" target="_blank" style="font-size: 20px;">
-              <img src="assets/icons/Phone.png" alt="Phone" style="width: 20px; height: 20px;">
+            <a
+              href="tel:+886-912710271"
+              target="_blank"
+              style="font-size: 20px"
+            >
+              <img
+                src="assets/icons/Phone.png"
+                style="width: 20px; height: 20px"
+                alt="image"
+              />
             </a>
           </div>
         </nav>
@@ -141,22 +184,24 @@
       <!-- START OF MAIN -->
       <div id="colorlib-main">
         <!-- ======= Contents ======= -->
-        <section>
+        <section class="top-section">
           <div class="container">
             <div class="col-md-12 col-lg-12">
               <div class="image-wrap">
                 <img
                   class="img-fluid w-100"
-                  src="assets/image/Antler/GOOSE.308.jpg"
-                  alt="Image"
+                  src="assets/image/Antler/antler_hero.webp"
+                  alt="image"
                 />
               </div>
             </div>
           </div>
+        </section>
+        <section>
           <div class="container">
             <div class="col-md-12 col-lg-12">
-              <h4 class="mt-5">Antler</h4>
-              <h5 class="mt-3">Lamp of Bronze Crane with Antler</h5>
+              <h4>Antler</h4>
+              <h5>Lamp of Bronze Crane with Antler</h5>
               <p>
                 This lamp, a modern interpretation of ancient Chinese metal
                 casting and inlaying techniques, showcases the beauty of antique
@@ -166,33 +211,22 @@
               </p>
             </div>
           </div>
-        </section>
-        <section style="margin-top: 5rem">
           <div class="container">
             <div class="col-md-12 col-lg-12">
               <div class="row">
-                <div class="col-12 col-lg-6">
-                  <div class="text-wrapper">
-                    <h4>Have a look at the product</h4>
-                    <p>
-                      With a 3D model, you can explore the form from different
-                      angles and examine every design detail. You can also use
-                      your smartphone to visit the website and try the AR mode,
-                      which lets you place the model in real-world settings.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-12">
                   <div class="model-viewer">
                     <model-viewer
-                      src="assets/models/goose.glb"
-                      camera-orbit="30deg 80deg 2m"
+                      src="assets/models/antler.glb"
                       ar=""
                       ar-modes="webxr scene-viewer quick-look"
                       camera-controls=""
-                      poster="poster.webp"
+                      interaction-prompt="none"
+                      camera-orbit="45deg 25deg 1m"
+                      field-of-view="10deg"
                       shadow-intensity="1"
                       auto-rotate=""
+                      rotation-per-second="3deg"
                     >
                     </model-viewer>
                   </div>
@@ -205,58 +239,65 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-md-12 col-lg-12">
-                <h4 class="mt-5">Product Details</h4>
-              </div>
-              <div class="col-12 col-lg-12 mt-4">
-                <div class="image-wrapper">
-                  <img
-                    class="img-fluid"
-                    src="assets/image/Antler/GOOSE.310.jpg"
-                    alt="Image"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <div class="col-12 col-lg-12 mt-4">
-                <div class="image-wrapper">
-                  <img
-                    class="img-fluid"
-                    src="assets/image/Antler/GOOSE.311.jpg"
-                    alt="Image"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <div class="col-12 col-lg-12 mt-4">
-                <div class="image-wrapper">
-                  <img
-                    class="img-fluid"
-                    src="assets/image/Antler/GOOSE.315.jpg"
-                    alt="Image"
-                    loading="lazy"
-                  />
-                </div>
+                <h4>Product Details</h4>
               </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <div class="container mt-5">
-            <div class="row">
-              <div class="col-lg-12 col-md-12">
-                <div class="image-wrapper text-center">
-                  <img src="assets/favicon/favicon-32x32.png" />
+            <div class="row justify-content-center gy-3">
+              <div class="col-12 col-lg-12">
+                <div class="image-wrapper">
+                  <img
+                    class="img-fluid"
+                    src="assets/image/Antler/antler_detail1.webp"
+                    loading="lazy"
+                    alt="image"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="col-lg-12 col-md-12">
-              <p class="text-center" style="font-size: 11px">
-                Designed by hc-design.
-              </p>
+              <div class="col-12 col-lg-12">
+                <div class="image-wrapper">
+                  <img
+                    class="img-fluid"
+                    src="assets/image/Antler/antler_detail2.webp"
+                    loading="lazy"
+                    alt="image"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-lg-12">
+                <div class="image-wrapper">
+                  <img
+                    class="img-fluid"
+                    src="assets/image/Antler/antler_detail3.webp"
+                    loading="lazy"
+                    alt="image"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <!-- ======= End of Contents ======= -->
+        <!-- ======= Start of Bottom Banner ======= -->
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+              <div class="logo-box">
+                <img
+                  class="no-style mx-auto d-block"
+                  style="max-width: 32px"
+                  src="assets/favicon/hc-favi.png"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <p class="text-center" style="font-size: 11px">
+                Designed and coded by Hantus Chen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ======= End of Bottom Banner ======= -->
       </div>
       <!-- END MAIN -->
     </div>

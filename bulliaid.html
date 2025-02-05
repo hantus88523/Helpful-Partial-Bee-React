@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BULLiAID — hc-design.</title>
+    <title>BULLiAID</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -13,7 +13,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style-projects.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Favicons -->
     <link href="assets/favicon/favicon-32x32.png" rel="icon" />
     <link href="assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -35,104 +35,147 @@
       rel="stylesheet"
     />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <!-- Template Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <!-- =======================================================
-	  * Template Name: PhotoFolio
-	  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-	  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-	  * Author: BootstrapMade.com
-	  * License: https://bootstrapmade.com/license/
-	  ======================================================== -->
     <!-- Google Model Viewer -->
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
     ></script>
   </head>
-  <style>
-    .logo {
-      margin-bottom: 4rem;
-      margin-left: -18px;
-      max-width: 10rem;
-    }
-    .logo-container {
-      max-width: 120%;
-    }
-  </style>
-  <body>
+
+  <body class="bulliaid-page">
     <div id="colorlib-page">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-      <aside id="colorlib-aside" role="complementary" class="js-fullheight">
-        <div class="container" id="logo-container">
-          <a href="index.html">
-            <img src="assets/logo/hc-design.png" class="logo" />
-          </a>
+      <!-- START LANGUAGE -->
+      <div class="language-switcher-container">
+        <div class="language-switcher">
+          <a class="language-switcher-active" href="bulliaid.html">EN</a>
+          <a class="language-switcher-not-active" href="bulliaid_jp.html">JP</a>
         </div>
-        <nav id="colorlib-main-menu" role="navigation" style="height: 100vh;">
+      </div>
+
+      <a class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+      <aside id="colorlib-aside" role="complementary" class="js-fullheight">
+        <nav id="colorlib-main-menu" role="navigation" style="height: 100vh">
+          <div class="logo-box">
+            <a href="index.html">
+              <img src="assets/logo/HCD.png" class="logo" alt="image" />
+            </a>
+          </div>
           <ul>
-            <li class="colorlib-active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="dropdown-button"><a>Projects</a></li>
             <li class="dropdown-content">
-              <ul style="padding-left: 20px">
-                <hr />
-                <li style="font-size: 13px; color: rgb(182, 182, 182)">
-                  UX + Product Design
+              <ul style="margin-bottom: 10px">
+                <hr class="project-list-line" />
+                <li
+                  style="
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgb(182, 182, 182);
+                  "
+                >
+                  Full experience
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="eatin.html">Eatin.</a>
+                <li>
+                  <a class="project-list" href="DiaFitty.html">DiaFitty</a>
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="lock-in.html">LOCK-iN</a>
+                <li>
+                  <a class="project-list" href="eatin.html">Eatin.</a>
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="bulliaid.html">BULLiAID</a>
+                <li>
+                  <a class="project-list" href="lock-in.html">LOCK-iN</a>
+                </li>
+                <li>
+                  <a class="project-list" href="bulliaid.html">BULLiAID</a>
                 </li>
               </ul>
-              <ul style="padding-left: 20px">
-                <li style="font-size: 13px; color: rgb(182, 182, 182)">
-                  UX Design
+              <ul style="margin-bottom: 10px">
+                <li
+                  style="
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgb(182, 182, 182);
+                  "
+                >
+                  Digital experience
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="gemz.html">GEMZ</a>
+                <li>
+                  <a class="project-list" href="gemz.html">GEMZ</a>
                 </li>
               </ul>
-              <ul style="padding-left: 20px">
-                <li style="font-size: 13px; color: rgb(182, 182, 182)">
-                  Product Design
+              <ul style="margin-bottom: 10px">
+                <li
+                  style="
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgb(182, 182, 182);
+                  "
+                >
+                  Tangible experience
+                </li>
+                <li>
+                  <a class="project-list" href="swing.html">Swing</a>
+                </li>
+                <li>
+                  <a class="project-list" href="shift.html">SHiFT</a>
+                </li>
+                <li>
+                  <a class="project-list" href="visionfuse.html">VisionFUSE</a>
                 </li>
                 <li style="font-size: 14px; color: black">
-                  <a href="swing.html">Swing</a>
+                  <a class="project-list" href="livingbubbles.html"
+                    >Living Bubbles</a
+                  >
                 </li>
                 <li style="font-size: 14px; color: black">
-                  <a href="shift.html">SHiFT</a>
+                  <a class="project-list" href="night-owl.html">Night-ØwL</a>
                 </li>
                 <li style="font-size: 14px; color: black">
-                  <a href="livingbubbles.html">Living Bubbles</a>
+                  <a class="project-list" href="antler.html">Antler</a>
                 </li>
                 <li style="font-size: 14px; color: black">
-                  <a href="night-owl.html">Night-ØwL</a>
+                  <a class="project-list" href="mrcbg.html">MRCBG</a>
                 </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="antler.html">Antler</a>
-                </li>
-                <li style="font-size: 14px; color: black">
-                  <a href="mrcbg.html">MRCBG</a>
-                </li>
-                <hr />
+                <hr class="project-list-line" />
               </ul>
             </li>
             <li><a href="about.html">About</a></li>
           </ul>
-          <div class="social-media-links" style="display: flex; gap: 15px; margin-top:25px;">
-            <a href="https://www.linkedin.com/in/hantuschen/" target="_blank" style="font-size: 20px;">
-              <img src="assets/icons/LinkedIn.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+          <div
+            class="social-media-links"
+            style="display: flex; gap: 15px; margin-top: 25px"
+          >
+            <a
+              href="https://www.linkedin.com/in/hantuschen/"
+              target="_blank"
+              style="font-size: 20px"
+            >
+              <img
+                src="assets/icons/LinkedIn.png"
+                style="width: 20px; height: 20px"
+                alt="image"
+              />
             </a>
-            <a href="mailto:hantuschendesign@gmail.com" target="_blank" style="font-size: 20px;">
-              <img src="assets/icons/Email.png" alt="Email" style="width: 20px; height: 20px;">
+            <a
+              href="mailto:hantuschendesign@gmail.com"
+              target="_blank"
+              style="font-size: 20px"
+            >
+              <img
+                src="assets/icons/Email.png"
+                style="width: 20px; height: 20px"
+                alt="image"
+              />
             </a>
-            <a href="tel:+886-912710271" target="_blank" style="font-size: 20px;">
-              <img src="assets/icons/Phone.png" alt="Phone" style="width: 20px; height: 20px;">
+            <a
+              href="tel:+886-912710271"
+              target="_blank"
+              style="font-size: 20px"
+            >
+              <img
+                src="assets/icons/Phone.png"
+                style="width: 20px; height: 20px"
+                alt="image"
+              />
             </a>
           </div>
         </nav>
@@ -141,24 +184,25 @@
       <!-- START OF MAIN -->
       <div id="colorlib-main">
         <!-- ======= Contents ======= -->
-        <section>
+        <section class="top-section">
           <div class="container">
             <div class="col-md-12 col-lg-12">
-              <div class="image-wrap">
+              <div class="hero-wrapper">
                 <img
-                  class="img-fluid w-100"
-                  src="assets/image/BULLiAID/BULLiAID.259.jpg"
-                  alt="Image"
+                  class="no-style img-fluid w-100"
+                  src="assets/image/BULLiAID/bulliaid_hero.webp"
+                  alt="image"
                 />
               </div>
             </div>
           </div>
+        </section>
+        <!-- between sections -->
+        <section>
           <div class="container">
             <div class="col-md-12 col-lg-12">
-              <h4 class="mt-5">BULLiAID</h4>
-              <h5 class="mt-3">
-                A multi-funcitonal solution to support bullied kids
-              </h5>
+              <h4>BULLiAID</h4>
+              <h5>A multi-funcitonal solution to support bullied kids</h5>
               <p>
                 Bullying remains a widespread issue in schools today, leaving
                 many parents and teachers unsure of how to support affected
@@ -179,52 +223,59 @@
             </div>
           </div>
         </section>
-        <div class="container mt-5 mb-5">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <div class="image-wrapper">
-                <img
-                  class="img-fluid"
-                  src="assets/image/BULLiAID/Mockups.png"
-                  alt="Image"
-                />
+        <!-- between sections -->
+        <section>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="image-wrapper">
+                  <img
+                    class="img-fluid"
+                    src="assets/image/BULLiAID/bulliaid_mockups1280.webp"
+                    alt="image"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="text-center">
-                <a
-                  style="text-decoration: none"
-                  href="https://xd.adobe.com/view/22b47f02-c689-4431-b4d6-24e4d3d2592b-77e7/"
-                >
-                  <button
-                    style="font-size: 14px; margin: 5px"
-                    type="button"
-                    class="btn btn-outline-dark btn-md rounded-pill"
+        </section>
+        <!-- between sections -->
+        <section>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="text-center">
+                  <a
+                    style="text-decoration: none"
+                    href="https://xd.adobe.com/view/22b47f02-c689-4431-b4d6-24e4d3d2592b-77e7/"
                   >
-                    View Teacher Version on XD
-                  </button>
-                </a>
-                <a
-                  style="text-decoration: none"
-                  href="https://xd.adobe.com/view/ffff11ae-84d2-4830-984f-327851bd6262-aaac/"
-                >
-                  <button
-                    style="font-size: 14px; margin: 5px"
-                    type="button"
-                    class="btn btn-outline-dark btn-md rounded-pill"
+                    <button
+                      style="font-size: 14px; margin: 5px"
+                      type="button"
+                      class="btn btn-outline-dark btn-md rounded-pill"
+                    >
+                      View Teacher Version on XD
+                    </button>
+                  </a>
+                  <a
+                    style="text-decoration: none"
+                    href="https://xd.adobe.com/view/ffff11ae-84d2-4830-984f-327851bd6262-aaac/"
                   >
-                    View Parents Version on XD
-                  </button></a
-                >
+                    <button
+                      style="font-size: 14px; margin: 5px"
+                      type="button"
+                      class="btn btn-outline-dark btn-md rounded-pill"
+                    >
+                      View Parents Version on XD
+                    </button></a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <section style="margin-top: 5rem">
+        </section>
+        <!-- between sections -->
+        <section>
           <div class="container">
             <div class="container-iframe">
               <iframe
@@ -236,32 +287,54 @@
             </div>
           </div>
         </section>
-        <section style="margin-top: 5rem">
+        <!-- between sections -->
+        <section>
           <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-12">
+                <h4>About this project</h4>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row gx-3 gy-3">
+              <div class="d-flex col-md-4 col-lg-4">
+                <p class="text-block flex-fill">
+                  <span class="text-black-400">My role : Individual</span
+                  ><br />User research, User experience, User Interface,
+                  Industrial design
+                </p>
+              </div>
+              <div class="d-flex col-md-4 col-lg-4">
+                <p class="text-block flex-fill">
+                  <span class="text-black-400">Main tools involved</span
+                  ><br />Fusion360, Keyshot, Adobe XD
+                </p>
+              </div>
+              <div class="d-flex col-md-4 col-lg-4">
+                <p class="text-block flex-fill">
+                  <span class="text-black-400">Project duration</span><br />1
+                  months
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-3">
             <div class="col-md-12 col-lg-12">
               <div class="row">
-                <div class="col-12 col-lg-6">
-                  <div class="text-wrapper">
-                    <h4>Have a look at the wearable</h4>
-                    <p>
-                      With a 3D model, you can explore the form from different
-                      angles and examine every design detail. You can also use
-                      your smartphone to visit the website and try the AR mode,
-                      which lets you place the model in real-world settings.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-12">
                   <div class="model-viewer">
                     <model-viewer
                       src="assets/models/bulliaid.glb"
-                      camera-orbit="130deg 50deg 1m"
                       ar=""
                       ar-modes="webxr scene-viewer quick-look"
                       camera-controls=""
-                      poster="poster.webp"
+                      interaction-prompt="none"
+                      camera-orbit="45deg 20deg 0.25m"
+                      field-of-view="10deg"
                       shadow-intensity="1"
                       auto-rotate=""
+                      rotation-per-second="3deg"
                     >
                     </model-viewer>
                   </div>
@@ -270,109 +343,64 @@
             </div>
           </div>
         </section>
-        <section class="mt-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-lg-12 mb-4">
-                <h4>About this project</h4>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row gy-4">
-              <div class="col-md-12 col-lg-12">
-                <ul>
-                  <li>
-                    <span class="text-black-400"
-                      >My role : Individual</span
-                    ><br />User research / User experience / User Interface/
-                    Industrial design
-                  </li>
-                  <li>
-                    <span class="text-black-400"
-                      >Main tools involved</span
-                    ><br />Fusion360 / Keyshot / Adobe XD
-                  </li>
-                  <li>
-                    <span class="text-black-400"
-                      >Project duration</span
-                    ><br />1 month
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- between sections -->
         <section>
           <div class="container">
-            <div class="row justify-content-center"></div>
-          </div>
-        </section>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-12">
-              <h4 class="mt-5">The problem</h4>
-              <h5 class="mt-3">When Bullying Goes Unaddressed</h5>
-              <p>
-                An Ministry of Health and Welfare (MOHW) investigation in Taiwan
-                reveals alarming statistics: 66.4% of students experience school
-                bullying, yet over 60% choose not to intervene. Over 50% of
-                these incidents happen during commutes or after school.
-              </p>
-              <h5 class="mt-3">Parents Struggle to Offer Assistance</h5>
-              <p>
-                In today's hectic world, parents, even when aware of bullying,
-                struggle to assist. While teachers can step in, they can't
-                provide round-the-clock protection. According to CommonWealth
-                Magazine, effective resolution often involves listening,
-                communicating, and guiding the child.
-              </p>
-            </div>
-            <div class="col-12 col-lg-12 mt-4">
-              <div class="image-wrapper">
-                <img
-                  class="img-fluid"
-                  src="assets/image/BULLiAID/Journey.jpg"
-                  style="width: 100%"
-                  alt="Image"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div class="col-12 col-lg-12 mt-4">
-              <div class="image-wrapper">
-                <img
-                  class="img-fluid"
-                  src="assets/image/BULLiAID/Problem.jpg"
-                  alt="Image"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <section>
-          <div class="container mt-4">
             <div class="row justify-content-center">
               <div class="col-md-12 col-lg-12">
-                <h4>Possible solution</h4>
+                <h4>The problem</h4>
+                <h5>When Bullying Goes Unaddressed</h5>
+                <p>
+                  An Ministry of Health and Welfare (MOHW) investigation in
+                  Taiwan reveals alarming statistics: 66.4% of students
+                  experience school bullying, yet over 60% choose not to
+                  intervene. Over 50% of these incidents happen during commutes
+                  or after school.
+                </p>
+                <h5>Parents Struggle to Offer Assistance</h5>
+                <p>
+                  In today's hectic world, parents, even when aware of bullying,
+                  struggle to assist. While teachers can step in, they can't
+                  provide round-the-clock protection. According to CommonWealth
+                  Magazine, effective resolution often involves listening,
+                  communicating, and guiding the child.
+                </p>
               </div>
-              <div class="col-12 col-lg-12 mt-4">
+              <div class="col-12 col-lg-12">
                 <div class="image-wrapper">
                   <img
-                    class="img-fluid w-100"
-                    src="assets/image/BULLiAID/Solution.jpg"
+                    class="img-fluid"
+                    src="assets/image/BULLiAID/bulliaid_userjourney.webp"
                     style="width: 100%"
-                    alt="Image"
                     loading="lazy"
+                    alt="image"
                   />
                 </div>
               </div>
-              <div class="col-md-12 col-lg-12 mt-4">
-                <p style="color: black; font-weight: 500; font-size: 17px">
-                  Recording, Monitoring, and Immediate Notification
-                </p>
-                <p>
+            </div>
+          </div>
+        </section>
+        <!-- between sections -->
+        <section>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-12">
+                <h4>Solution</h4>
+              </div>
+              <div class="col-12 col-lg-12">
+                <div class="image-wrapper mb-4">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/image/BULLiAID/bulliaid_solution.webp"
+                    style="width: 100%"
+                    loading="lazy"
+                    alt="image"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12">
+                <h5>Recording, Monitoring, and Immediate Notification</h5>
+                <p class="last-line">
                   A significant number of bullied students choose not to inform
                   their parents and endure the situation silently, contributing
                   to the persistence and difficulty in preventing school
@@ -384,26 +412,36 @@
             </div>
           </div>
         </section>
+        <!-- between sections -->
         <section>
-          <div class="container mt-4 mb-5">
+          <div class="container">
             <div class="row justify-content-center">
               <div class="col-md-12 col-lg-12">
                 <h4>User flow and technology</h4>
               </div>
-              <div class="col-12 col-lg-12 mt-4">
+              <div class="col-12 col-lg-12">
                 <div class="image-wrapper">
                   <img
                     class="img-fluid w-100"
-                    src="assets/image/BULLiAID/User flow and Technology.jpg"
+                    src="assets/image/BULLiAID/bulliaid_flowgraph.webp"
                     style="width: 100%"
-                    alt="Image"
                     loading="lazy"
+                    alt="image"
                   />
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- ======= Navigation G1G2 ======= -->
+        <!-- hr line start -->
+        <section>
+          <hr
+            width="90%"
+            style="margin: auto; height: 1px; background-color: rgb(0, 0, 0)"
+          />
+        </section>
+        <!-- hr line end -->
         <!-- ======= Navigation G1G2 ======= -->
         <section>
           <div class="nav-g" style="margin-bottom: 2rem; margin-top: 1.8rem">
@@ -413,7 +451,7 @@
               id="switchToGallery1"
               class="selected-link"
               style="text-align: center"
-              >UX Design</a
+              >UI/UX Design</a
             >
             <a href="#" id="middle-line">|</a>
             <a href="#" id="switchToGallery2" style="text-align: center"
@@ -421,60 +459,45 @@
             >
           </div>
         </section>
+        <!-- ======= Navigation G1G2 -End ======= -->
+        <!-- hr line start -->
         <section>
           <hr
-            class="mb-5"
             width="90%"
             style="margin: auto; height: 1px; background-color: rgb(0, 0, 0)"
           />
         </section>
+        <!-- hr line end -->
+        <!-- Start of Gallery1 -->
         <section id="gallery1">
-          <section
-            data-bs-version="5.1"
-            class="content5 cid-tEJ0qYgI4J"
-            id="content5-6w"
-          >
-            <div class="container mb-5">
-              <div class="row justify-content-center">
+          <section>
+            <div class="container">
+              <div class="row justify-content-center gy-3">
                 <div class="col-12 col-lg-12">
                   <div class="image-wrapper">
                     <img
                       class="img-fluid"
-                      src="assets/image/BULLiAID/User Interface.jpg"
-                      alt="Image"
+                      src="assets/image/BULLiAID/bulliaid_uidesign.webp"
                       loading="lazy"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-12">
+                  <div class="image-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/image/BULLiAID/bulliaid_prototype.webp"
+                      loading="lazy"
+                      alt="image"
                     />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section
-            data-bs-version="5.1"
-            class="content5 cid-tEJ0qYgI4J"
-            id="content5-6w"
-          >
-            <div class="container mt-4">
-              <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-12">
-                  <h4 class="mb-4 text-center">Prototype</h4>
-                </div>
-                <div class="container mb-4">
-                  <div class="row justify-content-center">
-                    <div class="col-12 col-lg-12">
-                      <div class="image-wrapper">
-                        <img
-                          class="img-fluid"
-                          src="assets/image/BULLiAID/Prototype.png"
-                          alt="Image"
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <!-- between sections -->
+          <section>
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-12">
@@ -509,134 +532,80 @@
             </div>
           </section>
         </section>
+        <!-- End of Gallery1 -->
+        <!-- Start of Gallery2 -->
         <section id="gallery2">
-          <section
-            data-bs-version="5.1"
-            class="content5 cid-tEJ0qYgI4J"
-            id="content5-6w"
-          >
-            <div class="container mt-4">
-              <div class="row justify-content-center">
+          <section>
+            <div class="container">
+              <div class="row justify-content-center gy-3">
+                <div class="col-12 col-lg-12">
+                  <div class="image-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/image/BULLiAID/bulliaid_hardwarecombined.webp"
+                      loading="lazy"
+                      alt="image"
+                    />
+                  </div>
+                </div>
                 <div class="col-md-12 col-lg-12">
-                  <h4 class="mb-4 text-center">Product Functions</h4>
-                </div>
-                <div class="container mb-5">
-                  <div class="row justify-content-center">
-                    <div class="col-12 col-lg-12">
-                      <div class="image-wrapper">
-                        <img
-                          class="img-fluid"
-                          src="assets/image/BULLiAID/PF01.jpg"
-                          alt="Image"
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-12">
-                      <div class="image-wrapper">
-                        <img
-                          class="img-fluid"
-                          src="assets/image/BULLiAID/PF02.jpg"
-                          alt="Image"
-                          loading="lazy"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="container mt-4">
-              <div class="row">
-                <div class="counter-container col-md-12 col-lg-12">
-                  <h4 class="text-center">Ideation Sketching</h4>
-                </div>
-              </div>
-            </div>
-            <div class="container mt-4">
-              <div class="row gy-4">
-                <div class="col-md-12 col-lg-6">
                   <div class="image-wrapper">
                     <img
                       class="img-fluid"
-                      style="border-radius: 10px"
-                      src="assets/image/BULLiAID/Sketches.jpg"
-                      alt="Image"
+                      src="assets/image/BULLiAID/bulliaid_sketch.webp"
                       loading="lazy"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                  <div class="image-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/image/BULLiAID/bulliaid_colors.webp"
+                      loading="lazy"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                  <div class="image-wrapper">
+                    <img
+                      class="img-fluid"
+                      src="assets/image/BULLiAID/bulliaid_model.webp"
+                      loading="lazy"
+                      alt="image"
                     />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section>
-            <div class="container mt-4">
-              <div class="row">
-                <div class="counter-container col-md-12 col-lg-12">
-                  <h4 class="text-center">3D Prototyping</h4>
-                </div>
-              </div>
-            </div>
-            <div class="container mt-4">
-              <div class="row gy-4">
-                <div class="col-md-12 col-lg-6">
-                  <div class="image-wrapper">
-                    <img
-                      class="img-fluid"
-                      style="border-radius: 10px"
-                      src="assets/image/BULLiAID/3D Model.jpg"
-                      alt="Image"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="container mt-4">
-              <div class="row">
-                <div class="counter-container col-md-12 col-lg-12">
-                  <h4 class="text-center">Color varieties</h4>
-                </div>
-              </div>
-            </div>
-            <div class="container mt-4">
-              <div class="row gy-4">
-                <div class="col-md-12 col-lg-6">
-                  <div class="image-wrapper">
-                    <img
-                      class="img-fluid"
-                      style="border-radius: 10px"
-                      src="assets/image/BULLiAID/Color Varieties.jpg"
-                      alt="Image"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <!-- between sections -->
         </section>
-        <section>
-          <div class="container mt-5">
-            <div class="row">
-              <div class="col-lg-12 col-md-12">
-                <div class="image-wrapper text-center">
-                  <img src="assets/favicon/favicon-32x32.png" />
-                </div>
+        <!-- End of Gallery2 -->
+        <!-- ======= End of Contents ======= -->
+        <!-- ======= Start of Bottom Banner ======= -->
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+              <div class="logo-box">
+                <img
+                  class="no-style mx-auto d-block"
+                  style="max-width: 32px"
+                  src="assets/favicon/hc-favi.png"
+                  alt="image"
+                />
               </div>
             </div>
             <div class="col-lg-12 col-md-12">
               <p class="text-center" style="font-size: 11px">
-                Designed by hc-design.
+                Designed and coded by Hantus Chen.
               </p>
             </div>
           </div>
-        </section>
-        <!-- ======= End of Contents ======= -->
+        </div>
+        <!-- ======= End of Bottom Banner ======= -->
       </div>
       <!-- END MAIN -->
     </div>

@@ -1,55 +1,102 @@
 // Open Sidenav
 (function ($) {
   ("use strict");
-
-  // burgerMenu
+  /**
+   * Dropdown
+   */
+  // JavaScript to toggle the dropdown and modify overflow-y on #colorlib-aside
+  const dropdownButton = document.querySelector(".dropdown-button");
+  const dropdownContent = document.querySelector(".dropdown-content");
+  const colorlibAside = document.querySelector("#colorlib-aside");
+  // Toggle dropdown
+  dropdownButton.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent the body click event from firing
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      colorlibAside.style.overflowY = "hidden"; // Disable overflow-y when dropdown is hidden
+    } else {
+      dropdownContent.style.display = "block";
+      colorlibAside.style.overflowY = "auto"; // Enable overflow-y when dropdown is shown
+    }
+  });
+  // Prevent dropdown from closing when clicking inside the dropdown content
+  dropdownContent.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent clicks inside dropdown from closing it
+  });
+  /**
+   * Burger Menu
+   */
   (function () {
+    var lastScrollPosition = 0; // Variable to store the last scroll position of the aside
     $(".js-colorlib-nav-toggle").on("click", function (event) {
       event.preventDefault();
       var $this = $(this);
-
       if ($("body").hasClass("slideout")) {
         $this.removeClass("active");
         $("body").removeClass("slideout");
+        setTimeout(function () {
+          $("aside").scrollTop(0); // Set scroll position to 0
+          dropdownContent.style.display = "none"; // Hide dropdown
+          colorlibAside.style.overflowY = "hidden";
+        }, 500); // Adjust the delay to match the slideout closing transition duration
       } else {
         $this.addClass("active");
         $("body").addClass("slideout");
+        dropdownContent.style.display = "none"; // Hide dropdown
+        colorlibAside.style.overflowY = "hidden"; // Disable overflow-y when dropdown is hidden
       }
     });
-  })();
-
-  // Click outside of offcanvass
-  var mobileMenuOutsideClick = function () {
+    // Ensure scroll position is 0 when slideout is removed by clicking outside
     $(document).click(function (e) {
       var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($("body").hasClass("slideout")) {
           $("body").removeClass("slideout");
           $(".js-colorlib-nav-toggle").removeClass("active");
+          setTimeout(function () {
+            $("aside").scrollTop(0); // Set scroll position to 0
+          }, 500); // Delay to match the slideout closing transition duration
         }
       }
     });
-
     $(window).scroll(function () {
       if ($("body").hasClass("slideout")) {
         $("body").removeClass("slideout");
         $(".js-colorlib-nav-toggle").removeClass("active");
+        setTimeout(function () {
+          $("aside").scrollTop(0); // Set scroll position to 0
+        }, 500); // Delay to match the slideout closing transition duration
       }
     });
-  };
-  mobileMenuOutsideClick();
+  })();
+  /* backup
+    // Click outside of offcanvass
+    var mobileMenuOutsideClick = function () {
+      $(document).click(function (e) {
+        var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+          if ($("body").hasClass("slideout")) {
+            $("body").removeClass("slideout");
+            $(".js-colorlib-nav-toggle").removeClass("active");
+          }
+        }
+      });
+      $(window).scroll(function () {
+        if ($("body").hasClass("slideout")) {
+          $("body").removeClass("slideout");
+          $(".js-colorlib-nav-toggle").removeClass("active");
+        }
+      });
+    };
+    mobileMenuOutsideClick();
+    */
 })(jQuery);
 
 /**
- * Template Name: PhotoFolio
- * Updated: Jul 27 2023 with Bootstrap v5.3.1
- * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
+PhotoFolio
  */
 document.addEventListener("DOMContentLoaded", () => {
   ("use strict");
-
   /**
    * Preloader
    */
@@ -64,25 +111,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000);
     });
   }
-
-  /**
-   *Typer
-   */
-  function typeStyle() {
-    var foo = jQuery("#typer");
-    foo.typer(["a Versatile ", " a Product", "a UX "]);
-  }
-
-  // Call the typeStyle function
-  typeStyle();
-
   /**
    * Initiate glightbox
    */
   // const glightbox = GLightbox({
   //   selector: ".glightbox",
   // });
-
   /**
    * Init swiper slider with 1 slide at once in desktop view
    */
@@ -104,7 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".swiper-button-prev",
     },
   });
-
   /**
    * Init swiper slider with 3 slides at once in desktop view
    */
@@ -130,13 +163,11 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 1,
         spaceBetween: 40,
       },
-
       1200: {
         slidesPerView: 3,
       },
     },
   });
-
   /**
    * Animation on scroll function and init
    */
@@ -152,22 +183,18 @@ document.addEventListener("DOMContentLoaded", () => {
   //     aos_init();
   //   });
 });
-
 /**
  * Switch between G1 G2
  */
-
 $(document).ready(function () {
   // Set the default view (show gallery1 and hide gallery2)
   $("#gallery1").show();
   $("#gallery2").hide();
-
   // Function to handle link selection
   function selectLink(link) {
     $(".nav-g a").removeClass("selected-link"); // Remove the class from all links
     link.addClass("selected-link"); // Add the class to the selected link
   }
-
   // Add event listeners to the "switch to gallery" links
   $("#switchToGallery1").click(function (event) {
     event.preventDefault(); // Prevent the default link behavior
@@ -176,7 +203,6 @@ $(document).ready(function () {
       selectLink($("#switchToGallery1")); // Select the clicked link
     });
   });
-
   $("#switchToGallery2").click(function (event) {
     event.preventDefault(); // Prevent the default link behavior
     $("#gallery1").fadeOut(300, function () {
@@ -185,35 +211,12 @@ $(document).ready(function () {
     });
   });
 });
-
 /**
  * Page Transition
  */
-
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("colorlib-main").style.opacity = 1; // Set opacity to 1 to trigger the fade-in effect
 });
-
-/**
- * Dropdown
- */
-
-// JavaScript to toggle the dropdown when the button is clicked
-const dropdownButton = document.querySelector(".dropdown-button");
-const dropdownContent = document.querySelector(".dropdown-content");
-
-dropdownButton.addEventListener("click", function () {
-  if (dropdownContent.style.display === "block") {
-    dropdownContent.style.display = "none";
-  } else {
-    dropdownContent.style.display = "block";
-  }
-});
-
-/**
- * Preload banner images for slideshow
- */
-
 var imagePaths = [
   "../assets/image/Banners/banner1.webp",
   "../assets/image/Banners/banner2.webp",
@@ -221,12 +224,44 @@ var imagePaths = [
   "../assets/image/Banners/banner4.webp",
   "../assets/image/Banners/banner5.webp",
 ];
-
 function preloadImages() {
   for (var i = 0; i < imagePaths.length; i++) {
     var img = new Image();
     img.src = imagePaths[i];
   }
 }
-
 preloadImages();
+
+/**
+ * auto add colorlib-active class to the current page
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPath = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll("#colorlib-main-menu a");
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === currentPath) {
+      link.parentElement.classList.add("colorlib-active");
+    }
+  });
+});
+/**
+ * lower the opacity of the language switcher after a delay
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  const languageSwitcher = document.querySelector(".language-switcher");
+  if (languageSwitcher) {
+    // Lower the opacity after a delay
+    setTimeout(function () {
+      languageSwitcher.style.opacity = "0.7";
+    }, 6000); // 3000ms = 3 seconds
+    // Handle hover to restore opacity
+    languageSwitcher.addEventListener("mouseenter", function () {
+      languageSwitcher.style.opacity = "1";
+    });
+    languageSwitcher.addEventListener("mouseleave", function () {
+      languageSwitcher.style.opacity = "0.7";
+    });
+  } else {
+    console.error("Language switcher element not found");
+  }
+});
