@@ -1,9 +1,17 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
+
 body {
   font-family: "poppins";
   font-size: 14px;
   line-height: 1.8;
-  font-weight: 300;
   background: #ffffff;
+  font-weight: 300;
+}
+
+:lang(jp) {
+  font-family: "Noto sans JP";
 }
 
 body.slideout {
@@ -61,7 +69,6 @@ a:focus {
 h1 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "poppins";
   color: #000;
 }
 
@@ -69,7 +76,6 @@ h2 {
   font-size: 32px;
   line-height: 1.5;
   font-weight: 400;
-  font-family: "poppins";
   color: #000;
 }
 
@@ -77,14 +83,12 @@ html:lang(jp) h2 {
   font-size: 32px;
   line-height: 1.5;
   font-weight: 200;
-  font-family: "poppins";
   color: #000;
 }
 
 h3 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "poppins";
   color: #000;
 }
 
@@ -92,7 +96,6 @@ h4 {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 500;
-  font-family: "poppins";
   color: #2d2d2d;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -102,7 +105,6 @@ h5 {
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-  font-family: "poppins";
   color: #464646;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -224,7 +226,6 @@ html:lang(jp) .text-black-400 {
   text-decoration: none;
   position: relative;
   padding: 10px 0;
-  font-family: "poppins";
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1031,7 +1032,6 @@ html:lang(jp) .text-black-400 {
 
 #middle-line {
   font-size: 14px;
-  font-family: "poppins";
   font-weight: 300;
   margin: 0 10px;
   color: black;
@@ -1138,7 +1138,6 @@ Start of banner section [*3]
 
 .banner-head {
   letter-spacing: 2px;
-  font-size: 35px;
 }
 
 .banner-head span {

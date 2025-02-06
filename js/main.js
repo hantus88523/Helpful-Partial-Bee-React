@@ -97,6 +97,7 @@ PhotoFolio
  */
 document.addEventListener("DOMContentLoaded", () => {
   ("use strict");
+
   /**
    * Preloader
    */
@@ -111,9 +112,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000);
     });
   }
+
   /**
-   * Initiate glightbox
+  Initiate glightbox
    */
+
   // const glightbox = GLightbox({
   //   selector: ".glightbox",
   // });
