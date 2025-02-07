@@ -101,17 +101,22 @@ document.addEventListener("DOMContentLoaded", () => {
   /**
    * Preloader
    */
-  const preloader = document.querySelector("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        preloader.classList.add("loaded");
-      }, 1000);
-      setTimeout(() => {
-        preloader.remove();
-      }, 2000);
-    });
-  }
+
+  /*
+const preloader = document.querySelector("#preloader");
+if (preloader) {
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      preloader.classList.add("loaded");
+    }, 1000);
+    setTimeout(() => {
+      preloader.remove();
+      // Trigger the fade-in effect for #colorlib-main after the preloader is removed
+      document.getElementById("colorlib-main").style.opacity = 1;
+    }, 2000);
+  });
+}
+*/
 
   /**
   Initiate glightbox
@@ -214,9 +219,12 @@ $(document).ready(function () {
     });
   });
 });
+
 /**
- * Page Transition
+ * Preload image banner
  */
+
+/*
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("colorlib-main").style.opacity = 1; // Set opacity to 1 to trigger the fade-in effect
 });
@@ -234,6 +242,44 @@ function preloadImages() {
   }
 }
 preloadImages();
+
+*/
+
+/**
+ * Preloader + image banner combined solution
+ */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const preloader = document.querySelector("#preloader");
+  if (preloader) {
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        preloader.classList.add("loaded");
+      }, 1000);
+      setTimeout(() => {
+        preloader.remove();
+        // Trigger the fade-in effect for #colorlib-main after the preloader is removed
+        document.getElementById("colorlib-main").style.opacity = 1;
+      }, 2000);
+    });
+  }
+
+  // Preload image banner
+  var imagePaths = [
+    "../assets/image/Banners/banner1.webp",
+    "../assets/image/Banners/banner2.webp",
+    "../assets/image/Banners/banner3.webp",
+    "../assets/image/Banners/banner4.webp",
+    "../assets/image/Banners/banner5.webp",
+  ];
+  function preloadImages() {
+    for (var i = 0; i < imagePaths.length; i++) {
+      var img = new Image();
+      img.src = imagePaths[i];
+    }
+  }
+  preloadImages();
+});
 
 /**
  * auto add colorlib-active class to the current page
