@@ -246,25 +246,24 @@ preloadImages();
 */
 
 /**
- * Preloader + image banner combined solution
+ * Preloader new
  */
 
-document.addEventListener("DOMContentLoaded", function () {
-  const preloader = document.querySelector("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      setTimeout(() => {
-        preloader.classList.add("loaded");
-      }, 1000);
-      setTimeout(() => {
-        preloader.remove();
-        // Trigger the fade-in effect for #colorlib-main after the preloader is removed
-        document.getElementById("colorlib-main").style.opacity = 1;
-      }, 2000);
-    });
-  }
+const preloader = document.querySelector("#preloader");
+if (preloader) {
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      preloader.classList.add("loaded");
+    }, 1000);
+    setTimeout(() => {
+      preloader.remove();
+      // Trigger the fade-in effect for #colorlib-main after the preloader is removed
+      document.getElementById("colorlib-main").style.opacity = 1;
+    }, 2000);
+  });
+}
 
-  // Preload image banner
+  // Preload image banner new
   var imagePaths = [
     "../assets/image/Banners/banner1.webp",
     "../assets/image/Banners/banner2.webp",
@@ -279,7 +278,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
   preloadImages();
-});
 
 /**
  * auto add colorlib-active class to the current page
