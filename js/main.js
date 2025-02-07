@@ -250,34 +250,50 @@ preloadImages();
  */
 
 const preloader = document.querySelector("#preloader");
+
+// Image paths to preload
+const imagePaths = [
+  "../assets/image/Banners/banner1.webp",
+  "../assets/image/Banners/banner2.webp",
+  "../assets/image/Banners/banner3.webp",
+  "../assets/image/Banners/banner4.webp",
+  "../assets/image/Banners/banner5.webp",
+];
+
+// Preload Images with Promises
+function preloadImages(paths) {
+  return Promise.all(
+    paths.map((path) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = path;
+        img.onload = () => resolve(path);         // Resolve when loaded
+        img.onerror = () => reject(`Failed to load: ${path}`); // Handle errors
+      });
+    })
+  );
+}
+
+// Preloader Logic
 if (preloader) {
   window.addEventListener("load", () => {
-    setTimeout(() => {
-      preloader.classList.add("loaded");
-    }, 1000);
-    setTimeout(() => {
-      preloader.remove();
-      // Trigger the fade-in effect for #colorlib-main after the preloader is removed
-      document.getElementById("colorlib-main").style.opacity = 1;
-    }, 2000);
+    preloadImages(imagePaths) // Preload images first
+      .then(() => {
+        // Add the 'loaded' class after 1 second
+        setTimeout(() => {
+          preloader.classList.add("loaded");
+        }, 1000);
+
+        // Remove preloader and show content after 2 seconds
+        setTimeout(() => {
+          preloader.remove();
+          document.getElementById("colorlib-main").style.opacity = 1;
+        }, 2000);
+      })
+      .catch((error) => console.error(error)); // Log image load errors
   });
 }
 
-  // Preload image banner new
-  var imagePaths = [
-    "../assets/image/Banners/banner1.webp",
-    "../assets/image/Banners/banner2.webp",
-    "../assets/image/Banners/banner3.webp",
-    "../assets/image/Banners/banner4.webp",
-    "../assets/image/Banners/banner5.webp",
-  ];
-  function preloadImages() {
-    for (var i = 0; i < imagePaths.length; i++) {
-      var img = new Image();
-      img.src = imagePaths[i];
-    }
-  }
-  preloadImages();
 
 /**
  * auto add colorlib-active class to the current page

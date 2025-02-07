@@ -1105,7 +1105,7 @@ Start of banner section [*3]
   padding-bottom: 400px;
   background-color: white;
   background-image: url(../assets/image/Banners/banner1.webp);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   animation: backgroundSlideshow 15s infinite;
@@ -1168,15 +1168,15 @@ Start of banner section [*3]
   }
 }
 
-.banner-head {
+.banner-text-head {
   letter-spacing: 2px;
 }
 
-.banner-head span {
+.banner-text-head span {
   display: block;
 }
 
-.banner-content {
+.banner-text {
   top: 60%;
   left: 5%;
   max-width: 500px;
