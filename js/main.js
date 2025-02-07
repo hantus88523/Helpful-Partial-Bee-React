@@ -1,9 +1,9 @@
-// Open Sidenav
+// =====Open Sidenav=====
 (function ($) {
   ("use strict");
-  /**
-   * Dropdown
-   */
+
+  // =====Dropdown=====
+
   // JavaScript to toggle the dropdown and modify overflow-y on #colorlib-aside
   const dropdownButton = document.querySelector(".dropdown-button");
   const dropdownContent = document.querySelector(".dropdown-content");
@@ -23,9 +23,9 @@
   dropdownContent.addEventListener("click", function (event) {
     event.stopPropagation(); // Prevent clicks inside dropdown from closing it
   });
-  /**
-   * Burger Menu
-   */
+
+  // =====Burger Menu=====
+
   (function () {
     var lastScrollPosition = 0; // Variable to store the last scroll position of the aside
     $(".js-colorlib-nav-toggle").on("click", function (event) {
@@ -69,65 +69,21 @@
       }
     });
   })();
-  /* backup
-    // Click outside of offcanvass
-    var mobileMenuOutsideClick = function () {
-      $(document).click(function (e) {
-        var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-          if ($("body").hasClass("slideout")) {
-            $("body").removeClass("slideout");
-            $(".js-colorlib-nav-toggle").removeClass("active");
-          }
-        }
-      });
-      $(window).scroll(function () {
-        if ($("body").hasClass("slideout")) {
-          $("body").removeClass("slideout");
-          $(".js-colorlib-nav-toggle").removeClass("active");
-        }
-      });
-    };
-    mobileMenuOutsideClick();
-    */
 })(jQuery);
 
-/**
-PhotoFolio
- */
+// =====PhotoFolio=====
+
 document.addEventListener("DOMContentLoaded", () => {
   ("use strict");
 
-  /**
-   * Preloader
-   */
+  // =====Initiate glightbox=====
 
-  /*
-const preloader = document.querySelector("#preloader");
-if (preloader) {
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      preloader.classList.add("loaded");
-    }, 1000);
-    setTimeout(() => {
-      preloader.remove();
-      // Trigger the fade-in effect for #colorlib-main after the preloader is removed
-      document.getElementById("colorlib-main").style.opacity = 1;
-    }, 2000);
+  const glightbox = GLightbox({
+    selector: ".glightbox",
   });
-}
-*/
 
-  /**
-  Initiate glightbox
-   */
+  // =====Init swiper slider with 1 slide at once in desktop view=====
 
-  // const glightbox = GLightbox({
-  //   selector: ".glightbox",
-  // });
-  /**
-   * Init swiper slider with 1 slide at once in desktop view
-   */
   new Swiper(".slides-1", {
     speed: 600,
     loop: true,
@@ -146,9 +102,9 @@ if (preloader) {
       prevEl: ".swiper-button-prev",
     },
   });
-  /**
-   * Init swiper slider with 3 slides at once in desktop view
-   */
+
+  // =====Init swiper slider with 3 slides at once in desktop view=====
+
   new Swiper(".slides-3", {
     speed: 600,
     loop: true,
@@ -176,24 +132,26 @@ if (preloader) {
       },
     },
   });
-  /**
-   * Animation on scroll function and init
-   */
-  //   function aos_init() {
-  //     AOS.init({
-  //       duration: 1000,
-  //       easing: "ease-in-out",
-  //       once: true,
-  //       mirror: false,
-  //     });
-  //   }
-  //   window.addEventListener("load", () => {
-  //     aos_init();
-  //   });
 });
-/**
- * Switch between G1 G2
- */
+
+// =====Animation on scroll function and init=====
+
+/*
+function aos_init() {
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+    once: true,
+    mirror: false,
+  });
+}
+window.addEventListener("load", () => {
+  aos_init();
+});
+*/
+
+// =====Switch between G1 G2=====
+
 $(document).ready(function () {
   // Set the default view (show gallery1 and hide gallery2)
   $("#gallery1").show();
@@ -220,34 +178,7 @@ $(document).ready(function () {
   });
 });
 
-/**
- * Preload image banner
- */
-
-/*
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("colorlib-main").style.opacity = 1; // Set opacity to 1 to trigger the fade-in effect
-});
-var imagePaths = [
-  "../assets/image/Banners/banner1.webp",
-  "../assets/image/Banners/banner2.webp",
-  "../assets/image/Banners/banner3.webp",
-  "../assets/image/Banners/banner4.webp",
-  "../assets/image/Banners/banner5.webp",
-];
-function preloadImages() {
-  for (var i = 0; i < imagePaths.length; i++) {
-    var img = new Image();
-    img.src = imagePaths[i];
-  }
-}
-preloadImages();
-
-*/
-
-/**
- * Preloader new
- */
+// =====Preloader new=====
 
 const preloader = document.querySelector("#preloader");
 
@@ -267,7 +198,7 @@ function preloadImages(paths) {
       return new Promise((resolve, reject) => {
         const img = new Image();
         img.src = path;
-        img.onload = () => resolve(path);         // Resolve when loaded
+        img.onload = () => resolve(path); // Resolve when loaded
         img.onerror = () => reject(`Failed to load: ${path}`); // Handle errors
       });
     })
@@ -294,10 +225,8 @@ if (preloader) {
   });
 }
 
+//===== auto add colorlib-active class to the current page=====
 
-/**
- * auto add colorlib-active class to the current page
- */
 document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname.split("/").pop();
   const navLinks = document.querySelectorAll("#colorlib-main-menu a");
@@ -307,9 +236,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-/**
- * lower the opacity of the language switcher after a delay
- */
+
+// =====lower the opacity of the language switcher after a delay=====
+
 document.addEventListener("DOMContentLoaded", function () {
   const languageSwitcher = document.querySelector(".language-switcher");
   if (languageSwitcher) {
